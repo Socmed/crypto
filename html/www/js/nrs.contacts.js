@@ -1,12 +1,12 @@
 /******************************************************************************
- * Copyright © 2013-2016 The Nxt Core Developers.                             *
+ * Copyright © 2013-2016 The Eagle Core Developers.                             *
  * Copyright © 2016-2017 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
  *                                                                            *
  * Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,*
- * no part of the Nxt software, including this file, may be copied, modified, *
+ * no part of the Eagle software, including this file, may be copied, modified, *
  * propagated, or distributed except according to the terms contained in the  *
  * LICENSE.txt file.                                                          *
  *                                                                            *
@@ -63,7 +63,7 @@ var NRS = (function(NRS, $) {
 						"<td>" + (contact.email ? contact.email.escapeHTML() : "-") + "</td>" +
 						"<td>" + contactDescription.escapeHTML() + "</td>" +
 						"<td style='white-space:nowrap'>" +
-						"<a class='btn btn-xs btn-default' href='#' data-toggle='modal' data-target='#send_money_modal' data-contact='" + String(contact.name).escapeHTML() + "'>" + $.t("send_nxt") + "</a>&nbsp;" +
+						"<a class='btn btn-xs btn-default' href='#' data-toggle='modal' data-target='#send_money_modal' data-contact='" + String(contact.name).escapeHTML() + "'>" + $.t("send_egl") + "</a>&nbsp;" +
 						"<a class='btn btn-xs btn-default' href='#' data-toggle='modal' data-target='#send_message_modal' data-contact='" + String(contact.name).escapeHTML() + "'>" + $.t("message") + "</a>&nbsp;" +
 						"<a class='btn btn-xs btn-default' href='#' data-toggle='modal' data-target='#delete_contact_modal' data-contact='" + String(contact.id).escapeHTML() + "'>" + $.t("delete") + "</a>" +
 						"</td>" +
@@ -87,7 +87,7 @@ var NRS = (function(NRS, $) {
 			};
 		}
 
-		if (/^\d+$/.test(data.name) || /^NXT\-/i.test(data.name)) {
+		if (/^\d+$/.test(data.name) || /^EGL\-/i.test(data.name)) {
 			return {
 				"error": $.t("error_contact_name_alpha")
 			};
@@ -110,9 +110,9 @@ var NRS = (function(NRS, $) {
 			}
 		}
 		var address;
-		if (/^NXT\-/i.test(data.account_id)) {
+		if (/^EGL\-/i.test(data.account_id)) {
 			data.account_rs = data.account_id;
-			address = new NxtAddress();
+			address = new EagleAddress();
 			if (address.set(data.account_rs)) {
 				data.account = address.account_id();
 			} else {
@@ -121,7 +121,7 @@ var NRS = (function(NRS, $) {
 				};
 			}
 		} else {
-			address = new NxtAddress();
+			address = new EagleAddress();
 			if (address.set(data.account_id)) {
 				data.account_rs = address.toString();
 			} else {
@@ -200,7 +200,7 @@ var NRS = (function(NRS, $) {
 		var contactId = parseInt($invoker.data("contact"), 10);
 		if (!contactId && NRS.selectedContext) {
 			var accountId = NRS.selectedContext.data("account");
-			var dbKey = (/^NXT\-/i.test(accountId) ? "accountRS" : "account");
+			var dbKey = (/^EGL\-/i.test(accountId) ? "accountRS" : "account");
 			var dbQuery = {};
 			dbQuery[dbKey] = accountId;
 			NRS.storageSelect("contacts", [dbQuery], function(error, contact) {
@@ -255,9 +255,9 @@ var NRS = (function(NRS, $) {
 			};
 		}
 		var address;
-		if (/^NXT\-/i.test(data.account_id)) {
+		if (/^EGL\-/i.test(data.account_id)) {
 			data.account_rs = data.account_id;
-			address = new NxtAddress();
+			address = new EagleAddress();
 			if (address.set(data.account_rs)) {
 				data.account = address.account_id();
 			} else {
@@ -266,7 +266,7 @@ var NRS = (function(NRS, $) {
 				};
 			}
 		} else {
-			address = new NxtAddress();
+			address = new EagleAddress();
 			if (address.set(data.account_id)) {
 				data.account_rs = address.toString();
 			} else {

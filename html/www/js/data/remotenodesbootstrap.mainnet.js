@@ -1,12 +1,12 @@
 /******************************************************************************
- * Copyright © 2013-2016 The Nxt Core Developers.                             *
+ * Copyright © 2013-2016 The Eagle Core Developers.                             *
  * Copyright © 2016-2017 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
  *                                                                            *
  * Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,*
- * no part of the Nxt software, including this file, may be copied, modified, *
+ * no part of the Eagle software, including this file, may be copied, modified, *
  * propagated, or distributed except according to the terms contained in the  *
  * LICENSE.txt file.                                                          *
  *                                                                            *
@@ -33,7 +33,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-62EE-NKL5-YUBC-ELGCG",
+                "platform": "EGL-62EE-NKL5-YUBC-ELGCG",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116801378,
@@ -63,12 +63,12 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.5",
-                "platform": "NXT-QEP7-6PBP-Z8HH-5E8QB",
+                "platform": "EGL-QEP7-6PBP-Z8HH-5E8QB",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7876,
                 "lastUpdated": 116801237,
                 "blacklisted": false,
-                "announcedAddress": "nxtnode004.ddnss.eu",
+                "announcedAddress": "eglnode004.ddnss.eu",
                 "apiPort": 7878,
                 "application": "NRS",
                 "port": 7874,
@@ -123,7 +123,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                 "inboundWebSocket": false,
                 "lastUpdated": 116772681,
                 "blacklisted": false,
-                "announcedAddress": "nxt.notbot.me",
+                "announcedAddress": "egl.notbot.me",
                 "apiPort": 7876,
                 "application": "NRS",
                 "port": 7874,
@@ -148,7 +148,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-RWMD-W3S7-L4UA-858G4",
+                "platform": "EGL-RWMD-W3S7-L4UA-858G4",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116801237,
@@ -178,7 +178,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-BC6T-3UWF-7HXC-28GQB",
+                "platform": "EGL-BC6T-3UWF-7HXC-28GQB",
                 "inboundWebSocket": true,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116801538,
@@ -208,7 +208,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-62EE-NKL5-YUBC-ELGCG",
+                "platform": "EGL-62EE-NKL5-YUBC-ELGCG",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116800917,
@@ -237,7 +237,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.5",
-                "platform": "NXT-3BC6-JEWA-Y9C6-EX5GP",
+                "platform": "EGL-3BC6-JEWA-Y9C6-EX5GP",
                 "inboundWebSocket": true,
                 "lastUpdated": 116801912,
                 "blacklisted": false,
@@ -266,12 +266,12 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-4ZS8-86DG-WKNX-9UQQF",
+                "platform": "EGL-4ZS8-86DG-WKNX-9UQQF",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7877,
                 "lastUpdated": 116801699,
                 "blacklisted": false,
-                "announcedAddress": "nxt.noip.me",
+                "announcedAddress": "egl.noip.me",
                 "apiPort": 7876,
                 "application": "NRS",
                 "port": 7874,
@@ -347,7 +347,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-RWMD-W3S7-L4UA-858G4",
+                "platform": "EGL-RWMD-W3S7-L4UA-858G4",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116802580,
@@ -403,7 +403,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.5",
-                "platform": "NXT-23AN-H49Y-PXEC-AK7XM",
+                "platform": "EGL-23AN-H49Y-PXEC-AK7XM",
                 "inboundWebSocket": false,
                 "lastUpdated": 116801699,
                 "blacklisted": false,
@@ -431,7 +431,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-Q3HX-THEE-T2PX-9XF6T",
+                "platform": "EGL-Q3HX-THEE-T2PX-9XF6T",
                 "inboundWebSocket": false,
                 "lastUpdated": 116801578,
                 "blacklisted": false,
@@ -460,7 +460,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-3WJT-WYBN-FR4U-H9GXR",
+                "platform": "EGL-3WJT-WYBN-FR4U-H9GXR",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7876,
                 "lastUpdated": 116802420,
@@ -490,7 +490,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-TGFQ-U33C-C37U-CMKWF",
+                "platform": "EGL-TGFQ-U33C-C37U-CMKWF",
                 "inboundWebSocket": true,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116802393,
@@ -520,7 +520,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-RWMD-W3S7-L4UA-858G4",
+                "platform": "EGL-RWMD-W3S7-L4UA-858G4",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116800596,
@@ -548,11 +548,11 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.5",
-                "platform": "NXT-WZWJ-3FXV-KH35-BRCE4",
+                "platform": "EGL-WZWJ-3FXV-KH35-BRCE4",
                 "inboundWebSocket": false,
                 "lastUpdated": 116800376,
                 "blacklisted": false,
-                "announcedAddress": "node0.forgenxt.com",
+                "announcedAddress": "node0.forgeegl.com",
                 "apiPort": 7876,
                 "application": "NRS",
                 "port": 7874,
@@ -577,7 +577,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-EQDE-VN3H-GAR5-D6W9R",
+                "platform": "EGL-EQDE-VN3H-GAR5-D6W9R",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7876,
                 "lastUpdated": 116783435,
@@ -603,7 +603,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.2",
-                "platform": "NXT-XAUF-C5WY-JNK5-AEUMC",
+                "platform": "EGL-XAUF-C5WY-JNK5-AEUMC",
                 "inboundWebSocket": true,
                 "lastUpdated": 116801758,
                 "blacklisted": false,
@@ -657,7 +657,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-RWMD-W3S7-L4UA-858G4",
+                "platform": "EGL-RWMD-W3S7-L4UA-858G4",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116800556,
@@ -687,7 +687,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-CNZM-S3X3-F5CF-3Q2P2",
+                "platform": "EGL-CNZM-S3X3-F5CF-3Q2P2",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7876,
                 "lastUpdated": 116761966,
@@ -717,7 +717,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.5",
-                "platform": "NXT-KDPE-5EZ8-VCU8-65ADP",
+                "platform": "EGL-KDPE-5EZ8-VCU8-65ADP",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116751091,
@@ -772,7 +772,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-TGFQ-U33C-C37U-CMKWF",
+                "platform": "EGL-TGFQ-U33C-C37U-CMKWF",
                 "inboundWebSocket": true,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116802480,
@@ -802,7 +802,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-ZVKS-7TGR-DYCR-23LW2",
+                "platform": "EGL-ZVKS-7TGR-DYCR-23LW2",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7876,
                 "lastUpdated": 116801498,
@@ -832,7 +832,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-RWMD-W3S7-L4UA-858G4",
+                "platform": "EGL-RWMD-W3S7-L4UA-858G4",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116802540,
@@ -862,7 +862,7 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.6",
-                "platform": "NXT-RWMD-W3S7-L4UA-858G4",
+                "platform": "EGL-RWMD-W3S7-L4UA-858G4",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7878,
                 "lastUpdated": 116802339,
@@ -892,12 +892,12 @@ RemoteNodesManager.prototype.REMOTE_NODES_BOOTSTRAP =
                     "CORS"
                 ],
                 "version": "1.11.5",
-                "platform": "NXT-DBSU-KJ8N-BE67-FXX98",
+                "platform": "EGL-DBSU-KJ8N-BE67-FXX98",
                 "inboundWebSocket": false,
                 "apiSSLPort": 7876,
                 "lastUpdated": 116798094,
                 "blacklisted": false,
-                "announcedAddress": "nxt2.utut.org",
+                "announcedAddress": "egl2.utut.org",
                 "apiPort": 7877,
                 "application": "NRS",
                 "port": 7874,

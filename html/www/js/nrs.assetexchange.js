@@ -1,12 +1,12 @@
 /******************************************************************************
- * Copyright © 2013-2016 The Nxt Core Developers.                             *
+ * Copyright © 2013-2016 The Eagle Core Developers.                             *
  * Copyright © 2016-2017 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
  *                                                                            *
  * Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,*
- * no part of the Nxt software, including this file, may be copied, modified, *
+ * no part of the Eagle software, including this file, may be copied, modified, *
  * propagated, or distributed except according to the terms contained in the  *
  * LICENSE.txt file.                                                          *
  *                                                                            *
@@ -159,13 +159,13 @@ var NRS = (function (NRS, $, undefined) {
             };
         }
 
-        if (!/^\d+$/.test(data.id) && !/^NXT\-/i.test(data.id)) {
+        if (!/^\d+$/.test(data.id) && !/^EGL\-/i.test(data.id)) {
             return {
                 "error": $.t("error_asset_or_account_id_invalid")
             };
         }
 
-        if (/^NXT\-/i.test(data.id)) {
+        if (/^EGL\-/i.test(data.id)) {
             NRS.sendRequest("getAssetsByIssuer", {
                 "account": data.id
             }, function (response) {
@@ -561,10 +561,10 @@ var NRS = (function (NRS, $, undefined) {
             $("#sell_asset_button").data("asset", assetId);
             $("#buy_asset_button").data("asset", assetId);
             $("#view_asset_distribution_link").data("asset", assetId);
-            $("#sell_asset_for_nxt").html($.t("sell_asset_for_nxt", {
+            $("#sell_asset_for_egl").html($.t("sell_asset_for_egl", {
                 "assetName": NRS.escapeRespStr(asset.name)
             }));
-            $("#buy_asset_with_nxt").html($.t("buy_asset_with_nxt", {
+            $("#buy_asset_with_egl").html($.t("buy_asset_with_egl", {
                 "assetName": NRS.escapeRespStr(asset.name)
             }));
             $("#sell_asset_price, #buy_asset_price").val("");
@@ -634,10 +634,10 @@ var NRS = (function (NRS, $, undefined) {
         }
 
         if (NRS.accountInfo.unconfirmedBalanceNQT == "0") {
-            $("#your_nxt_balance").html("0");
+            $("#your_egl_balance").html("0");
             $("#buy_automatic_price").addClass("zero").removeClass("nonzero");
         } else {
-            $("#your_nxt_balance").html(NRS.formatAmount(NRS.accountInfo.unconfirmedBalanceNQT));
+            $("#your_egl_balance").html(NRS.formatAmount(NRS.accountInfo.unconfirmedBalanceNQT));
             $("#buy_automatic_price").addClass("nonzero").removeClass("zero");
         }
 
@@ -883,7 +883,7 @@ var NRS = (function (NRS, $, undefined) {
             $("#asset_exchange_clear_search").hide();
         } else {
             assetSearch = [];
-            if (/NXT\-/i.test(input)) {
+            if (/EGL\-/i.test(input)) {
                 $.each(assets, function (key, asset) {
                     if (asset.accountRS.toLowerCase() == input || asset.accountRS.toLowerCase().indexOf(input) !== -1) {
                         assetSearch.push(asset.asset);
@@ -942,7 +942,7 @@ var NRS = (function (NRS, $, undefined) {
 
             $("#" + type + "_asset_price").val(NRS.calculateOrderPricePerWholeQNT(priceNQT, currentAsset.decimals));
             $("#" + type + "_asset_quantity").val(NRS.convertToQNTf(quantityQNT, currentAsset.decimals));
-            $("#" + type + "_asset_total").val(NRS.convertToNXT(totalNQT));
+            $("#" + type + "_asset_total").val(NRS.convertToEGL(totalNQT));
         } catch (err) {
             return;
         }
@@ -989,7 +989,7 @@ var NRS = (function (NRS, $, undefined) {
             if (price.cmp(new Big("0")) <= 0) {
                 //get minimum price if no offers exist, based on asset decimals..
                 price = new Big("" + Math.pow(10, currentAsset.decimals));
-                assetPrice.val(NRS.convertToNXT(price.toString()));
+                assetPrice.val(NRS.convertToEGL(price.toString()));
             }
 
             var quantity;
@@ -1008,7 +1008,7 @@ var NRS = (function (NRS, $, undefined) {
 
             $("#" + type + "_asset_quantity").val(quantity.toString());
             var assetTotal = $("#" + type + "_asset_total");
-            assetTotal.val(NRS.convertToNXT(total.toString()));
+            assetTotal.val(NRS.convertToEGL(total.toString()));
             assetTotal.css({
                 "background": "",
                 "color": ""
@@ -1059,7 +1059,7 @@ var NRS = (function (NRS, $, undefined) {
             var quantity = String($("#" + orderType + "_asset_quantity").val());
             var quantityQNT = new BigInteger(NRS.convertToQNT(quantity, currentAsset.decimals));
             var priceNQT = new BigInteger(NRS.calculatePricePerWholeQNT(NRS.convertToNQT(String($("#" + orderType + "_asset_price").val())), currentAsset.decimals));
-            var totalNXT = NRS.formatAmount(NRS.calculateOrderTotalNQT(quantityQNT, priceNQT, currentAsset.decimals), false, true);
+            var totalEGL = NRS.formatAmount(NRS.calculateOrderTotalNQT(quantityQNT, priceNQT, currentAsset.decimals), false, true);
         } catch (err) {
             $.growl($.t("error_invalid_input"), {
                 "type": "danger"
@@ -1081,26 +1081,26 @@ var NRS = (function (NRS, $, undefined) {
             description = $.t("buy_order_description", {
                 "quantity": NRS.formatQuantity(quantityQNT, currentAsset.decimals, true),
                 "asset_name": $("#asset_name").html().escapeHTML(),
-                "nxt": NRS.formatAmount(priceNQTPerWholeQNT)
+                "egl": NRS.formatAmount(priceNQTPerWholeQNT)
             });
             tooltipTitle = $.t("buy_order_description_help", {
-                "nxt": NRS.formatAmount(priceNQTPerWholeQNT, false, true),
-                "total_nxt": totalNXT
+                "egl": NRS.formatAmount(priceNQTPerWholeQNT, false, true),
+                "total_egl": totalEGL
             });
         } else {
             description = $.t("sell_order_description", {
                 "quantity": NRS.formatQuantity(quantityQNT, currentAsset.decimals, true),
                 "asset_name": $("#asset_name").html().escapeHTML(),
-                "nxt": NRS.formatAmount(priceNQTPerWholeQNT)
+                "egl": NRS.formatAmount(priceNQTPerWholeQNT)
             });
             tooltipTitle = $.t("sell_order_description_help", {
-                "nxt": NRS.formatAmount(priceNQTPerWholeQNT, false, true),
-                "total_nxt": totalNXT
+                "egl": NRS.formatAmount(priceNQTPerWholeQNT, false, true),
+                "total_egl": totalEGL
             });
         }
 
         $("#asset_order_description").html(description);
-        $("#asset_order_total").html(totalNXT + " NXT");
+        $("#asset_order_total").html(totalEGL + " EGL");
 
         var assetOrderTotalTooltip = $("#asset_order_total_tooltip");
         if (quantity != "1") {

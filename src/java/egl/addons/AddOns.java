@@ -1,0 +1,82 @@
+
+package egl.addons;
+
+import egl.Eagle;
+import egl.http.APIServlet;
+import egl.http.APITag;
+import egl.util.Logger;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+
+public final class AddOns {
+
+    private static final List<AddOn> addOns;
+    static {
+        List<AddOn> addOnsList = new ArrayList<>();
+        Eagle.getStringListProperty("egl.addOns").forEach(addOn -> {
+            try {
+                addOnsList.add((AddOn)Class.forName(addOn).newInstance());
+            } catch (ReflectiveOperationException e) {
+                Logger.logErrorMessage(e.getMessage(), e);
+            }
+        });
+        addOns = Collections.unmodifiableList(addOnsList);
+        if (!addOns.isEmpty() && !Eagle.getBooleanProperty("egl.disableSecurityPolicy")) {
+            System.setProperty("java.security.policy", Eagle.isDesktopApplicationEnabled() ? "egldesktop.policy" : "egl.policy");
+            Logger.logMessage("Setting security manager with policy " + System.getProperty("java.security.policy"));
+            System.setSecurityManager(new SecurityManager() {
+                @Override
+                public void checkConnect(String host, int port) {
+                    // Allow all connections
+                }
+                @Override
+                public void checkConnect(String host, int port, Object context) {
+                    // Allow all connections
+                }
+            });
+        }
+        addOns.forEach(addOn -> {
+            Logger.logInfoMessage("Initializing " + addOn.getClass().getName());
+            addOn.init();
+        });
+    }
+
+    public static void init() {}
+
+    public static void shutdown() {
+        addOns.forEach(addOn -> {
+            Logger.logShutdownMessage("Shutting down " + addOn.getClass().getName());
+            addOn.shutdown();
+        });
+    }
+
+    public static void registerAPIRequestHandlers(Map<String,APIServlet.APIRequestHandler> map) {
+        for (AddOn addOn : addOns) {
+            APIServlet.APIRequestHandler requestHandler = addOn.getAPIRequestHandler();
+            if (requestHandler != null) {
+                if (!requestHandler.getAPITags().contains(APITag.ADDONS)) {
+                    Logger.logErrorMessage("Add-on " + addOn.getClass().getName()
+                            + " attempted to register request handler which is not tagged as APITag.ADDONS, skipping");
+                    continue;
+                }
+                String requestType = addOn.getAPIRequestType();
+                if (requestType == null) {
+                    Logger.logErrorMessage("Add-on " + addOn.getClass().getName() + " requestType not defined");
+                    continue;
+                }
+                if (map.get(requestType) != null) {
+                    Logger.logErrorMessage("Add-on " + addOn.getClass().getName() + " attempted to override requestType " + requestType + ", skipping");
+                    continue;
+                }
+                Logger.logMessage("Add-on " + addOn.getClass().getName() + " registered new API: " + requestType);
+                map.put(requestType, requestHandler);
+            }
+        }
+    }
+
+    private AddOns() {}
+
+}

@@ -1,18 +1,4 @@
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  ~ Copyright © 2013-2016 The Nxt Core Developers.                            ~
-  ~ Copyright © 2016-2017 Jelurida IP B.V.                                    ~
-  ~                                                                           ~
-  ~ See the LICENSE.txt file at the top-level directory of this distribution  ~
-  ~ for licensing information.                                                ~
-  ~                                                                           ~
-  ~ Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,
-  ~ no part of the Nxt software, including this file, may be copied, modified,~
-  ~ propagated, or distributed except according to the terms contained in the ~
-  ~ LICENSE.txt file.                                                         ~
-  ~                                                                           ~
-  ~ Removal or modification of this copyright notice is prohibited.           ~
-  ~                                                                           ~
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 
 <div id="ignis_page" class="paginated page">
     <section id="ignis_disabled" class="content">
@@ -50,7 +36,7 @@
                             <span data-i18n="ignis_available"></span>
                             <span id="sell_ignis_supply"></span>
                             <p></p>
-                            <span id="your_nxt_balance_message"></span>
+                            <span id="your_egl_balance_message"></span>
                             <p></p>
                             <span id="your_ingis_balance_message"></span>
                             <p></p>
@@ -60,7 +46,7 @@
                 <div class="col-md-4">
                     <div class="box box-solid box-primary">
                         <div class="box-header">
-                            <h3 class="box-title" data-i18n="buy_ignis_with_nxt"></h3>
+                            <h3 class="box-title" data-i18n="buy_ignis_with_egl"></h3>
                         </div>
                         <form autocomplete="off">
                             <div class="box-body">
@@ -75,21 +61,21 @@
                                     <label for="buy_ignis_rate" class="col-sm-3 control-label" data-i18n="rate">Rate</label>
                                     <div class="input-group">
                                         <input id="buy_ignis_rate" value="0" name="buy_currency_rate" class="form-control" data-type="ignis" readonly/>
-                                        <span class="input-group-addon"><span class="currency_code"></span> / NXT</span>
+                                        <span class="input-group-addon"><span class="currency_code"></span> / EGL</span>
                                     </div>
                                 </div>
                                 <div class="form-group" style="display: none">
                                     <label for="buy_ignis_effective_rate" class="col-sm-3 control-label" data-i18n="effective_rate">Effective Rate</label>
                                     <div class="input-group">
                                         <input id="buy_ignis_effective_rate" value="0" name="buy_currency_effective_rate" class="form-control" data-type="ignis" readonly/>
-                                        <span class="input-group-addon"><span class="currency_code"></span> / NXT</span>
+                                        <span class="input-group-addon"><span class="currency_code"></span> / EGL</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="buy_ignis_total" class="col-sm-3 control-label" data-i18n="total">Total</label>
                                     <div class="input-group">
                                         <input id="buy_ignis_total" name="buy_currency_total" readonly value="0" class="form-control disabled" />
-                                        <span class="input-group-addon">NXT</span>
+                                        <span class="input-group-addon">EGL</span>
                                     </div>
                                 </div>
                                 <input type="hidden" id="buy_ignis_currency" name="currency" value=""/>
@@ -106,7 +92,7 @@
                 <div class="col-md-4">
                     <div class="box box-solid box-primary">
                         <div class="box-header">
-                            <h3 class="box-title"><span data-i18n="exchange_to_nxt"></span></h3>
+                            <h3 class="box-title"><span data-i18n="exchange_to_egl"></span></h3>
                         </div>
                         <form>
                             <div class="box-body">

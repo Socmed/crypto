@@ -1,19 +1,5 @@
 <!DOCTYPE html>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  ~ Copyright © 2013-2016 The Nxt Core Developers.                            ~
-  ~ Copyright © 2016-2017 Jelurida IP B.V.                                    ~
-  ~                                                                           ~
-  ~ See the LICENSE.txt file at the top-level directory of this distribution  ~
-  ~ for licensing information.                                                ~
-  ~                                                                           ~
-  ~ Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,
-  ~ no part of the Nxt software, including this file, may be copied, modified,~
-  ~ propagated, or distributed except according to the terms contained in the ~
-  ~ LICENSE.txt file.                                                         ~
-  ~                                                                           ~
-  ~ Removal or modification of this copyright notice is prohibited.           ~
-  ~                                                                           ~
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 
 <html>
 	<head>
@@ -107,8 +93,8 @@
 			}
 			
 			function adjustFee() {
-				var amount = parseInt(document.getElementById("amountNXT").value);
-				document.getElementById("feeNXT").value = isNaN(amount) ? 1 : (amount < 500 ? 1 : Math.round(amount / 1000));
+				var amount = parseInt(document.getElementById("amountEGL").value);
+				document.getElementById("feeEGL").value = isNaN(amount) ? 1 : (amount < 500 ? 1 : Math.round(amount / 1000));
 			}
 			
 			function adjustSections(widgetIndex, widgetHeight, sections) {
@@ -296,15 +282,15 @@
 			}
 			
 			function sendMoney() {
-				var element, recipient, amountNXT, feeNXT, deadline, secretPhrase;
+				var element, recipient, amountEGL, feeEGL, deadline, secretPhrase;
 				element = document.getElementById("input");
 				recipient = element.value;
 				element.readOnly = true;
-				element = document.getElementById("amountNXT");
-				amountNXT = element.value;
+				element = document.getElementById("amountEGL");
+				amountEGL = element.value;
 				element.readOnly = true;
-				element = document.getElementById("feeNXT");
-				feeNXT = element.value;
+				element = document.getElementById("feeEGL");
+				feeEGL = element.value;
 				element.readOnly = true;
 				element = document.getElementById("deadline");
 				deadline = element.value;
@@ -313,14 +299,14 @@
 				secretPhrase = element.value;
 				element.readOnly = true;
 				document.getElementById("sendMoney").disabled = true;
-				sendRequest("sendMoney&recipient=" + recipient + "&amountNXT=" + amountNXT + "&feeNXT=" + feeNXT + "&deadline=" + deadline +
+				sendRequest("sendMoney&recipient=" + recipient + "&amountEGL=" + amountEGL + "&feeEGL=" + feeEGL + "&deadline=" + deadline +
 				    "&secretPhrase=" + encodeURIComponent(secretPhrase));
 			}
 			
 			function sendRequest(requestParameters) {
 				var request = new XMLHttpRequest();
 				var params = "user=" + user + "&requestType=" + requestParameters + "&" + Math.random();
-				request.open("POST", "/nxt-proxy");
+				request.open("POST", "/egl-proxy");
 				request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				request.onreadystatechange = function() {
 					if (this.readyState == 4 && this.status == 200) {
@@ -377,7 +363,7 @@
 								break;
 							case "notifyOfIncorrectTransaction":
 								showMessage(response.message, function() {
-									showTransactionDialog(response.recipient, response.amountNXT, response.feeNXT, response.deadline);
+									showTransactionDialog(response.recipient, response.amountEGL, response.feeEGL, response.deadline);
 								});
 								break;
 							case "processInitialData":document.title = "NRS " + response.version;
@@ -540,7 +526,7 @@
 				    "<tr><td class='input'><input type='password' id='input' onkeydown='if (event.keyCode == 13) unlockAccount(); else if (event.keyCode == 27) closeDialog();'></td></tr>" +
 				    "<tr><td><button id='unlockAccount' onclick='unlockAccount();'>Unlock account</button></td></tr>" +
 				    "<tr><td><b>If opening a new account, please note:</b><br /> " +
-				    "A simple passphrase will certainly result in your NXT being stolen! Do not use any phrase that appears in any printed or online material, " +
+				    "A simple passphrase will certainly result in your EGL being stolen! Do not use any phrase that appears in any printed or online material, " +
 				    "no matter how long or obscure. A secure passphrase will be at least 35 characters long and consist of random letters, numbers, and special " +
 				    "characters, or a meaningless combination of 10 random words.</td></tr></table>");
 			}
@@ -604,10 +590,10 @@
 				document.getElementById("fee").value = fee;
 			}
 			
-			function showTransactionDialog(recipient, amountNXT, feeNXT, deadline) {
+			function showTransactionDialog(recipient, amountEGL, feeEGL, deadline) {
 				showDialog("Transaction", "<table><tr><td class='label' colspan='2'>Recipient</td></tr><tr><td class='input' colspan='2'><input id='input'></td></tr>" +
 				    "<tr><td class='label' style='padding-top: 0;'>Amount</td><td class='label' style='padding-top: 0;'>Fee</td></tr>" +
-				    "<tr><td class='input'><input type='number' id='amountNXT' oninput='adjustFee();'></td><td class='input'><input type='number' id='feeNXT'></td></tr>" +
+				    "<tr><td class='input'><input type='number' id='amountEGL' oninput='adjustFee();'></td><td class='input'><input type='number' id='feeEGL'></td></tr>" +
 				    "<tr><td class='label' colspan='2' style='padding-top: 0;'>Deadline (in hours)</td></tr><tr><td class='input'><input type='number' id='deadline' oninput='adjustDeadlineTime();'></td>" +
 				        "<td class='input'><input id='deadlineTime' readonly></td></tr>" +
 				    "<tr><td class='label' colspan='2'>Secret phrase</td></tr>" +

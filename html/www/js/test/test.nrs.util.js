@@ -1,12 +1,12 @@
 /******************************************************************************
- * Copyright © 2013-2016 The Nxt Core Developers.                             *
+ * Copyright © 2013-2016 The Eagle Core Developers.                             *
  * Copyright © 2016-2017 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
  *                                                                            *
  * Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,*
- * no part of the Nxt software, including this file, may be copied, modified, *
+ * no part of the Eagle software, including this file, may be copied, modified, *
  * propagated, or distributed except according to the terms contained in the  *
  * LICENSE.txt file.                                                          *
  *                                                                            *
@@ -16,18 +16,18 @@
 
 QUnit.module("nrs.util");
 
-QUnit.test("convertToNXT", function (assert) {
-    assert.equal(NRS.convertToNXT(200000000), "2", "whole");
-    assert.equal(NRS.convertToNXT(20000000), "0.2", "fraction");
-    assert.equal(NRS.convertToNXT(-200000000), "-2", "negative");
-    assert.equal(NRS.convertToNXT(-20000000), "-0.2", "fraction.negative");
-    assert.equal(NRS.convertToNXT(-220000000), "-2.2", "whole.fraction.negative");
-    assert.equal(NRS.convertToNXT(2), "0.00000002", "nqt");
-    assert.equal(NRS.convertToNXT(-2), "-0.00000002", "nqt.negative");
-    assert.equal(NRS.convertToNXT(new BigInteger(String(2))), "0.00000002", "input.object");
-    assert.equal(NRS.convertToNXT("hi"), "0.00000188", "alphanumeric"); // strange behavior of BigInteger don't do that
+QUnit.test("convertToEGL", function (assert) {
+    assert.equal(NRS.convertToEGL(200000000), "2", "whole");
+    assert.equal(NRS.convertToEGL(20000000), "0.2", "fraction");
+    assert.equal(NRS.convertToEGL(-200000000), "-2", "negative");
+    assert.equal(NRS.convertToEGL(-20000000), "-0.2", "fraction.negative");
+    assert.equal(NRS.convertToEGL(-220000000), "-2.2", "whole.fraction.negative");
+    assert.equal(NRS.convertToEGL(2), "0.00000002", "nqt");
+    assert.equal(NRS.convertToEGL(-2), "-0.00000002", "nqt.negative");
+    assert.equal(NRS.convertToEGL(new BigInteger(String(2))), "0.00000002", "input.object");
+    assert.equal(NRS.convertToEGL("hi"), "0.00000188", "alphanumeric"); // strange behavior of BigInteger don't do that
     assert.throws(function () {
-        NRS.convertToNXT(null);
+        NRS.convertToEGL(null);
     }, {
         "message": "Cannot read property 'compareTo' of null",
         "name": "TypeError"
@@ -57,7 +57,7 @@ QUnit.test("formatAmount", function (assert) {
     assert.equal(NRS.formatAmount(12.345, true, false), "12.35", "number.rounding");
     assert.equal(NRS.formatAmount(12.343, true, false), "12.34", "number.rounding");
     assert.equal(NRS.formatAmount("123456700000", false, true), Number("1234.567").toLocaleString(), "1000separator");
-    assert.equal(NRS.formatAmount("123456700000000", true, true), Number("1234567").toLocaleString(), "nxt.rounding");
+    assert.equal(NRS.formatAmount("123456700000000", true, true), Number("1234567").toLocaleString(), "egl.rounding");
     assert.equal(NRS.formatAmount("123456780000000", true, false), Number("1234567.8").toLocaleString(), "thousands.separator.escaped");
 });
 
@@ -186,21 +186,21 @@ QUnit.test("getAccountLink", function (assert) {
     NRS.contacts = {};
 
     assert.equal(NRS.getAccountLink({}, "dummy"), "/", "non.existing");
-    assert.equal(NRS.getAccountLink({ entity: 5873880488492319831 }, "entity"), "<a href='#' data-user='NXT-XKA2-7VJU-VZSY-7R335' class='show_account_modal_action user-info'>/</a>", "numeric");
-    assert.equal(NRS.getAccountLink({ entityRS: "NXT-XK4R-7VJU-6EQG-7R335" }, "entity"), "<a href='#' data-user='NXT-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>NXT-XK4R-7VJU-6EQG-7R335</a>", "RS");
-    assert.equal(NRS.getAccountLink({ entity: 5873880488492319831, entityRS: "NXT-XK4R-7VJU-6EQG-7R335" }, "entity"), "<a href='#' data-user='NXT-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>NXT-XK4R-7VJU-6EQG-7R335</a>", "numeric.and.RS");
-    NRS.contacts = { "NXT-XK4R-7VJU-6EQG-7R335": { name: "foo" }};
-    assert.equal(NRS.getAccountLink({ entityRS: "NXT-XK4R-7VJU-6EQG-7R335" }, "entity"), "<a href='#' data-user='NXT-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>foo</a>", "contact");
-    NRS.accountRS = "NXT-XK4R-7VJU-6EQG-7R335";
-    assert.equal(NRS.getAccountLink({ entityRS: "NXT-XK4R-7VJU-6EQG-7R335" }, "entity"), "<a href='#' data-user='NXT-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>You</a>", "you");
-    assert.equal(NRS.getAccountLink({ entityRS: "NXT-XK4R-7VJU-6EQG-7R335" }, "entity", "NXT-XK4R-7VJU-6EQG-7R335", "account"), "<a href='#' data-user='NXT-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>Account</a>", "force.account.name");
-    assert.equal(NRS.getAccountLink({ entityRS: "NXT-XK4R-7VJU-6EQG-7R335" }, "entity", undefined, undefined, true), "<a href='#' data-user='NXT-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>NXT-XK4R-7VJU-6EQG-7R335</a>", "maintain.rs.format");
-    assert.equal(NRS.getAccountLink({ entityRS: "NXT-XK4R-7VJU-6EQG-7R335" }, "entity", undefined, undefined, undefined, "btn btn-xs"), "<a href='#' data-user='NXT-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info btn btn-xs'>You</a>", "add.class");
+    assert.equal(NRS.getAccountLink({ entity: 5873880488492319831 }, "entity"), "<a href='#' data-user='EGL-XKA2-7VJU-VZSY-7R335' class='show_account_modal_action user-info'>/</a>", "numeric");
+    assert.equal(NRS.getAccountLink({ entityRS: "EGL-XK4R-7VJU-6EQG-7R335" }, "entity"), "<a href='#' data-user='EGL-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>EGL-XK4R-7VJU-6EQG-7R335</a>", "RS");
+    assert.equal(NRS.getAccountLink({ entity: 5873880488492319831, entityRS: "EGL-XK4R-7VJU-6EQG-7R335" }, "entity"), "<a href='#' data-user='EGL-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>EGL-XK4R-7VJU-6EQG-7R335</a>", "numeric.and.RS");
+    NRS.contacts = { "EGL-XK4R-7VJU-6EQG-7R335": { name: "foo" }};
+    assert.equal(NRS.getAccountLink({ entityRS: "EGL-XK4R-7VJU-6EQG-7R335" }, "entity"), "<a href='#' data-user='EGL-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>foo</a>", "contact");
+    NRS.accountRS = "EGL-XK4R-7VJU-6EQG-7R335";
+    assert.equal(NRS.getAccountLink({ entityRS: "EGL-XK4R-7VJU-6EQG-7R335" }, "entity"), "<a href='#' data-user='EGL-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>You</a>", "you");
+    assert.equal(NRS.getAccountLink({ entityRS: "EGL-XK4R-7VJU-6EQG-7R335" }, "entity", "EGL-XK4R-7VJU-6EQG-7R335", "account"), "<a href='#' data-user='EGL-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>Account</a>", "force.account.name");
+    assert.equal(NRS.getAccountLink({ entityRS: "EGL-XK4R-7VJU-6EQG-7R335" }, "entity", undefined, undefined, true), "<a href='#' data-user='EGL-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info'>EGL-XK4R-7VJU-6EQG-7R335</a>", "maintain.rs.format");
+    assert.equal(NRS.getAccountLink({ entityRS: "EGL-XK4R-7VJU-6EQG-7R335" }, "entity", undefined, undefined, undefined, "btn btn-xs"), "<a href='#' data-user='EGL-XK4R-7VJU-6EQG-7R335' class='show_account_modal_action user-info btn btn-xs'>You</a>", "add.class");
     NRS.contacts = null;
     NRS.accountRS = null;
     NRS.constants.GENESIS = 1739068987193023818;
-    NRS.constants.GENESIS_RS = "NXT-MR8N-2YLS-3MEQ-3CMAJ";
-    assert.equal(NRS.getAccountLink({ entityRS: NRS.constants.GENESIS_RS }, "entity"), "<a href='#' data-user='NXT-MR8N-2YLS-3MEQ-3CMAJ' class='show_account_modal_action user-info'>Genesis</a>", "genesis");
+    NRS.constants.GENESIS_RS = "EGL-MR8N-2YLS-3MEQ-3CMAJ";
+    assert.equal(NRS.getAccountLink({ entityRS: NRS.constants.GENESIS_RS }, "entity"), "<a href='#' data-user='EGL-MR8N-2YLS-3MEQ-3CMAJ' class='show_account_modal_action user-info'>Genesis</a>", "genesis");
 });
 
 QUnit.test("generateToken", function (assert) {

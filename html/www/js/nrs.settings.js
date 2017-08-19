@@ -1,12 +1,12 @@
 /******************************************************************************
- * Copyright © 2013-2016 The Nxt Core Developers.                             *
+ * Copyright © 2013-2016 The Eagle Core Developers.                             *
  * Copyright © 2016-2017 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
  *                                                                            *
  * Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,*
- * no part of the Nxt software, including this file, may be copied, modified, *
+ * no part of the Eagle software, including this file, may be copied, modified, *
  * propagated, or distributed except according to the terms contained in the  *
  * LICENSE.txt file.                                                          *
  *                                                                            *
@@ -46,7 +46,7 @@ var NRS = (function(NRS, $) {
         "changelly_coin0": "BTC",
         "changelly_coin1": "ARDR",
         "changelly_coin2": "ETH",
-		"max_nxt_decimals": "2",
+		"max_egl_decimals": "2",
 		"ignis_tc_accepted": "-1"
 	};
 
@@ -253,7 +253,7 @@ var NRS = (function(NRS, $) {
 			var setting = $("#settings_" + key);
             if (/_warning/i.test(key) && key != "asset_transfer_warning" && key != "currency_transfer_warning") {
 				if (setting.length) {
-					setting.val(NRS.convertToNXT(NRS.settings[key]));
+					setting.val(NRS.convertToEGL(NRS.settings[key]));
 				}
 			} else if (!/_color/i.test(key)) {
 				if (setting.length) {

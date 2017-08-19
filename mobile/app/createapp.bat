@@ -1,5 +1,5 @@
 rmdir /s /q wallet
-call cordova create wallet org.nxt.mobile.wallet "NXT Mobile Wallet" --template ..\..\html
+call cordova create wallet org.egl.mobile.wallet "EGL Mobile Wallet" --template ..\..\html
 cd wallet
 rmdir /s /q icons
 xcopy /y/i/s ..\..\icons icons

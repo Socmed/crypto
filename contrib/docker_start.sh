@@ -1,2 +1,2 @@
 #!/bin/bash
-cd /nxt; ./run.sh
+cd /egl; ./run.sh

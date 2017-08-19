@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.nxt.mobile.wallet" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>NXT Mobile Wallet</name>
+<widget id="org.egl.mobile.wallet" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>EGL Mobile Wallet</name>
     <description>
-        Reference implementation mobile wallet for NXT.
+        Reference implementation mobile wallet for EGL.
     </description>
-    <author email="support@nxt.org" href="http://nxt.org/">
+    <author email="support@egl.org" href="http://egl.org/">
         Riker
     </author>
     <version>111.5.0</version>

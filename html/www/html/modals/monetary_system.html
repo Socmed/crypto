@@ -1,18 +1,4 @@
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  ~ Copyright © 2013-2016 The Nxt Core Developers.                            ~
-  ~ Copyright © 2016-2017 Jelurida IP B.V.                                    ~
-  ~                                                                           ~
-  ~ See the LICENSE.txt file at the top-level directory of this distribution  ~
-  ~ for licensing information.                                                ~
-  ~                                                                           ~
-  ~ Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,
-  ~ no part of the Nxt software, including this file, may be copied, modified,~
-  ~ propagated, or distributed except according to the terms contained in the ~
-  ~ LICENSE.txt file.                                                         ~
-  ~                                                                           ~
-  ~ Removal or modification of this copyright notice is prohibited.           ~
-  ~                                                                           ~
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 
 <div class="modal fade" id="transfer_currency_modal" data-transaction-type="5" data-transaction-subtype="3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -149,7 +135,7 @@
                             <label for="issue_currency_reservable" style="font-weight:normal;" tabindex="6" data-i18n="reservable">Reservable</label>
                         </div>
                         <div class="form-group advanced optional_reserve">
-                            <label for="issue_currency_min_reserve" data-i18n="min_reserve_v2">MINIMUM AMOUNT OF NXT PER WHOLE UNIT NEEDED TO ACTIVATE CURRENCY</label>
+                            <label for="issue_currency_min_reserve" data-i18n="min_reserve_v2">MINIMUM AMOUNT OF EGL PER WHOLE UNIT NEEDED TO ACTIVATE CURRENCY</label>
                             <input name="minReservePerUnitNQT" id="issue_currency_min_reserve" class="form-control" placeholder="Minimum Amount Per Unit" data-i18n="minimum_reserve" tabindex="7" disabled>
                         </div>
                         <div class="form-group advanced optional_reserve">
@@ -308,7 +294,7 @@
                             <div class="col-sm-8">
                                 <div class="input-group">
                                     <input id="buy_currency_offer_rate" type="text" value="0" name="buyRateNQT" class="form-control" data-type="buy" tabindex="4" />
-                                    <span class="input-group-addon"><span class="currency_code"></span> / NXT</span>
+                                    <span class="input-group-addon"><span class="currency_code"></span> / EGL</span>
                                 </div>
                             </div>
                         </div>
@@ -342,7 +328,7 @@
                             <div class="col-sm-8">
                                 <div class="input-group">
                                     <input id="sell_currency_offer_rate" type="text" value="0" name="sellRateNQT" class="form-control" data-type="sell" tabindex="7" />
-                                    <span class="input-group-addon"><span class="currency_code"></span> / NXT</span>
+                                    <span class="input-group-addon"><span class="currency_code"></span> / EGL</span>
                                 </div>
                             </div>
                         </div>
@@ -436,16 +422,16 @@
                         <label for="reserve_currency_initialSupply_text" data-i18n="initial_supply_included">Initial Supply Included</label> <i><span id="reserve_currency_initialSupply_text"></span></i>
                         </p>
                         <p>
-                        <label for="reserve_currency_minReserve_text" data-i18n="target_reserve">Target Amount [NXT]</label> <i><span id="reserve_currency_minReserve_text"></span></i>
-                        <label for="reserve_currency_currentReserve_text" data-i18n="current_reserve">Reserved Amount [NXT]</label> <i><span id="reserve_currency_currentReserve_text"></span></i>
+                        <label for="reserve_currency_minReserve_text" data-i18n="target_reserve">Target Amount [EGL]</label> <i><span id="reserve_currency_minReserve_text"></span></i>
+                        <label for="reserve_currency_currentReserve_text" data-i18n="current_reserve">Reserved Amount [EGL]</label> <i><span id="reserve_currency_currentReserve_text"></span></i>
                         </p>
                     </div>
                     <div class="form-group">
-                        <label for="reserve_currency_amount" data-i18n="amount_per_currency_unit">Amount of NXT to reserve</label>
-                        <input type="text" class="form-control" id="reserve_currency_amount" placeholder="NXT amount" data-i18n="amount" tabindex="1" />
+                        <label for="reserve_currency_amount" data-i18n="amount_per_currency_unit">Amount of EGL to reserve</label>
+                        <input type="text" class="form-control" id="reserve_currency_amount" placeholder="EGL amount" data-i18n="amount" tabindex="1" />
                     </div>
                     <div class="form-group">
-                        <label for="reserve_currency_total" data-i18n="amount_nxt_reserved">Reserve per Unit</label>
+                        <label for="reserve_currency_total" data-i18n="amount_egl_reserved">Reserve per Unit</label>
                         <input id="reserve_currency_total" name="amountPerUnitNQT" readonly style="border: none"/>
                     </div>
                     <div data-replace-with-modal-template="fee_calculation_modal_template"></div>

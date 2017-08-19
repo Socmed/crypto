@@ -1,16 +1,16 @@
 #!/bin/sh
-if [ -e ~/.nxt/nxt.pid ]; then
-    PID=`cat ~/.nxt/nxt.pid`
+if [ -e ~/.egl/egl.pid ]; then
+    PID=`cat ~/.egl/egl.pid`
     ps -p $PID > /dev/null
     STATUS=$?
     echo "stopping"
     while [ $STATUS -eq 0 ]; do
-        kill `cat ~/.nxt/nxt.pid` > /dev/null
+        kill `cat ~/.egl/egl.pid` > /dev/null
         sleep 5
         ps -p $PID > /dev/null
         STATUS=$?
     done
-    rm -f ~/.nxt/nxt.pid
-    echo "Nxt server stopped"
+    rm -f ~/.egl/egl.pid
+    echo "Eagle server stopped"
 fi
 

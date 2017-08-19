@@ -1,12 +1,12 @@
 /******************************************************************************
- * Copyright © 2013-2016 The Nxt Core Developers.                             *
+ * Copyright © 2013-2016 The Eagle Core Developers.                             *
  * Copyright © 2016-2017 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
  *                                                                            *
  * Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,*
- * no part of the Nxt software, including this file, may be copied, modified, *
+ * no part of the Eagle software, including this file, may be copied, modified, *
  * propagated, or distributed except according to the terms contained in the  *
  * LICENSE.txt file.                                                          *
  *                                                                            *
@@ -176,7 +176,7 @@ var NRS = (function(NRS, $) {
 			"page": "main",
 			"searchStr": ""
 		};
-		$(".tagged_data_search input[name=q]").val("").trigger("unmask").mask("NXT-****-****-****-*****");
+		$(".tagged_data_search input[name=q]").val("").trigger("unmask").mask("EGL-****-****-****-*****");
 		$(".tagged_data_fulltext_search input[name=fs_q]").val("");
 		$(".tagged_data_search_pageheader_addon").hide();
 		$("#tagged_data_search_contents").empty();
@@ -242,8 +242,8 @@ var NRS = (function(NRS, $) {
 
 		if (account == "") {
 			NRS.pages.tagged_data_search();
-		} else if (/^(NXT\-)/i.test(account)) {
-			var address = new NxtAddress();
+		} else if (/^(EGL\-)/i.test(account)) {
+			var address = new EagleAddress();
 			if (!address.set(account)) {
 				$.growl($.t("error_invalid_account"), {
 					"type": "danger"
@@ -297,9 +297,9 @@ var NRS = (function(NRS, $) {
         NRS.sendRequest("getTransaction", {
             "transaction": transaction
         }, function (response) {
-            var fee = NRS.convertToNXT(NRS.escapeRespStr(response.feeNQT));
+            var fee = NRS.convertToEGL(NRS.escapeRespStr(response.feeNQT));
             $('#extend_data_fee').val(fee);
-            $('#extend_data_fee_label').html(String(fee) + " NXT");
+            $('#extend_data_fee_label').html(String(fee) + " EGL");
         })
     });
 

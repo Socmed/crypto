@@ -1,12 +1,12 @@
 /******************************************************************************
- * Copyright © 2013-2016 The Nxt Core Developers.                             *
+ * Copyright © 2013-2016 The Eagle Core Developers.                             *
  * Copyright © 2016-2017 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
  *                                                                            *
  * Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,*
- * no part of the Nxt software, including this file, may be copied, modified, *
+ * no part of the Eagle software, including this file, may be copied, modified, *
  * propagated, or distributed except according to the terms contained in the  *
  * LICENSE.txt file.                                                          *
  *                                                                            *
@@ -57,32 +57,32 @@ var NRS = (function (NRS, $, undefined) {
                 }
             }
         });
-        //convert NXT to NQT...
+        //convert EGL to NQT...
         var field = "N/A";
         try {
-            var nxtFields = [
-                ["feeNXT", "feeNQT"],
-                ["amountNXT", "amountNQT"],
-                ["priceNXT", "priceNQT"],
-                ["refundNXT", "refundNQT"],
-                ["discountNXT", "discountNQT"],
-                ["phasingQuorumNXT", "phasingQuorum"],
-                ["phasingMinBalanceNXT", "phasingMinBalance"],
-                ["controlQuorumNXT", "controlQuorum"],
-                ["controlMinBalanceNXT", "controlMinBalance"],
-                ["controlMaxFeesNXT", "controlMaxFees"],
-                ["minBalanceNXT", "minBalance"],
-                ["shufflingAmountNXT", "amount"],
-                ["monitorAmountNXT", "amount"],
-                ["monitorThresholdNXT", "threshold"]
+            var eglFields = [
+                ["feeEGL", "feeNQT"],
+                ["amountEGL", "amountNQT"],
+                ["priceEGL", "priceNQT"],
+                ["refundEGL", "refundNQT"],
+                ["discountEGL", "discountNQT"],
+                ["phasingQuorumEGL", "phasingQuorum"],
+                ["phasingMinBalanceEGL", "phasingMinBalance"],
+                ["controlQuorumEGL", "controlQuorum"],
+                ["controlMinBalanceEGL", "controlMinBalance"],
+                ["controlMaxFeesEGL", "controlMaxFees"],
+                ["minBalanceEGL", "minBalance"],
+                ["shufflingAmountEGL", "amount"],
+                ["monitorAmountEGL", "amount"],
+                ["monitorThresholdEGL", "threshold"]
             ];
 
-            for (i = 0; i < nxtFields.length; i++) {
-                var nxtField = nxtFields[i][0];
-                var nqtField = nxtFields[i][1];
-                if (nxtField in data) {
-                    data[nqtField] = NRS.convertToNQT(data[nxtField]);
-                    delete data[nxtField];
+            for (i = 0; i < eglFields.length; i++) {
+                var eglField = eglFields[i][0];
+                var nqtField = eglFields[i][1];
+                if (eglField in data) {
+                    data[nqtField] = NRS.convertToNQT(data[eglField]);
+                    delete data[eglField];
                 }
             }
         } catch (err) {
@@ -139,7 +139,7 @@ var NRS = (function (NRS, $, undefined) {
                 callback({
                     "errorCode": 1,
                     "errorDescription": $.t("error_fee_exceeds_max_account_control_fee", {
-                        "maxFee": NRS.convertToNXT(phasingControl.maxFees)
+                        "maxFee": NRS.convertToEGL(phasingControl.maxFees)
                     })
                 });
                 return;
@@ -180,10 +180,10 @@ var NRS = (function (NRS, $, undefined) {
         if (requestType == "getAccountId") {
             accountId = NRS.getAccountId(data.secretPhrase);
 
-            var nxtAddress = new NxtAddress();
+            var eglAddress = new EagleAddress();
             var accountRS = "";
-            if (nxtAddress.set(accountId)) {
-                accountRS = nxtAddress.toString();
+            if (eglAddress.set(accountId)) {
+                accountRS = eglAddress.toString();
             }
             callback({
                 "account": accountId,
@@ -368,7 +368,7 @@ var NRS = (function (NRS, $, undefined) {
         }
         var url;
         if (options.remoteNode) {
-            url = options.remoteNode.getUrl() + "/nxt";
+            url = options.remoteNode.getUrl() + "/egl";
         } else {
             url = NRS.getRequestPath(options.noProxy);
         }
@@ -1612,8 +1612,8 @@ var NRS = (function (NRS, $, undefined) {
 
     function addAddressData(data) {
         if (typeof data == "object" && ("recipient" in data)) {
-            var address = new NxtAddress();
-            if (/^NXT\-/i.test(data.recipient)) {
+            var address = new EagleAddress();
+            if (/^EGL\-/i.test(data.recipient)) {
                 data.recipientRS = data.recipient;
                 if (address.set(data.recipient)) {
                     data.recipient = address.account_id();

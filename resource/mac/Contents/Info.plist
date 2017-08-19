@@ -9,15 +9,15 @@
 	<key>CFBundleAllowMixedLocalizations</key>
 	<true/>
 	<key>CFBundleExecutable</key>
-	<string>nxt</string>
+	<string>egl</string>
 	<key>CFBundleIconFile</key>
-	<string>nxt</string>
+	<string>egl</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.nxt.runtime</string>
+	<string>org.egl.runtime</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Nxt</string>
+	<string>Eagle</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

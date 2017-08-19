@@ -1,7 +1,7 @@
 {
-  "name": "nxt-blockchain",
+  "name": "egl-blockchain",
   "version": "1.11.6",
-  "description": "Client API library for the NXT Blockchain",
+  "description": "Client API library for the EGL Blockchain",
   "main": "nrs.node.bridge.js",
   "directories": {
     "test": "test"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/JeanLucPicard/nxt.git"
+    "url": "git+https://bitbucket.org/JeanLucPicard/egl.git"
   },
   "keywords": [
     "blockchain",
@@ -20,7 +20,7 @@
   ],
   "author": "Jelurida",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/JeanLucPicard/nxt#readme",
+  "homepage": "https://bitbucket.org/JeanLucPicard/egl#readme",
   "dependencies": {
     "async": "^2.1.4",
     "crypto-js": "^3.1.9-1",

@@ -2,25 +2,25 @@
 CP="lib/*:classes"
 SP=src/java/
 
-/bin/rm -f nxt.jar
-/bin/rm -f nxtservice.jar
+/bin/rm -f egl.jar
+/bin/rm -f eglservice.jar
 /bin/rm -rf classes
 /bin/mkdir -p classes/
 /bin/rm -rf addons/classes
 /bin/mkdir -p addons/classes/
 
-echo "compiling nxt core..."
-find src/java/nxt/ -name "*.java" > sources.tmp
+echo "compiling egl core..."
+find src/java/egl/ -name "*.java" > sources.tmp
 javac -encoding utf8 -sourcepath "${SP}" -classpath "${CP}" -d classes/ @sources.tmp || exit 1
-echo "nxt core class files compiled successfully"
+echo "egl core class files compiled successfully"
 
-echo "compiling nxt desktop..."
-find src/java/nxtdesktop/ -name "*.java" > sources.tmp
+echo "compiling egl desktop..."
+find src/java/egldesktop/ -name "*.java" > sources.tmp
 javac -encoding utf8 -sourcepath "${SP}" -classpath "${CP}" -d classes/ @sources.tmp
 if [ $? -eq 0 ]; then
-    echo "nxt desktop class files compiled successfully"
+    echo "egl desktop class files compiled successfully"
 else
-    echo "if javafx is not supported, nxt desktop compile errors are safe to ignore, but desktop wallet will not be available"
+    echo "if javafx is not supported, egl desktop compile errors are safe to ignore, but desktop wallet will not be available"
 fi
 
 rm -f sources.tmp

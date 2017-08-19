@@ -1,12 +1,12 @@
 /******************************************************************************
- * Copyright © 2013-2016 The Nxt Core Developers.                             *
+ * Copyright © 2013-2016 The Eagle Core Developers.                             *
  * Copyright © 2016-2017 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
  *                                                                            *
  * Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,*
- * no part of the Nxt software, including this file, may be copied, modified, *
+ * no part of the Eagle software, including this file, may be copied, modified, *
  * propagated, or distributed except according to the terms contained in the  *
  * LICENSE.txt file.                                                          *
  *                                                                            *
@@ -51,15 +51,15 @@ var NRS = (function(NRS, $, undefined) {
             }
          },
          "filter": function(entry, tokens) {
-            return tokens.title.indexOf("Donations toward") == -1 && tokens.title.indexOf("NXT tipping bot has arrived") == -1
+            return tokens.title.indexOf("Donations toward") == -1 && tokens.title.indexOf("EGL tipping bot has arrived") == -1
          },
          "ssl": ssl
       };
 
-      $("#nxtforum_news").rss("https://nxtforum.org/index.php?type=rss;action=.xml", settings, NRS.newsLoaded);
-      $("#reddit_news").rss("http://www.reddit.com/r/NXT/.rss", settingsReddit, NRS.newsLoaded);
-      $("#nxtcoin_blogspot_news").rss("http://nxtcoin.blogspot.com/feeds/posts/default", settings, NRS.newsLoaded);
-      $("#nxter_news").rss("http://nxter.org/feed/", settings, NRS.newsLoaded);
+      $("#eglforum_news").rss("https://eglforum.org/index.php?type=rss;action=.xml", settings, NRS.newsLoaded);
+      $("#reddit_news").rss("http://www.reddit.com/r/EGL/.rss", settingsReddit, NRS.newsLoaded);
+      $("#eglcoin_blogspot_news").rss("http://eglcoin.blogspot.com/feeds/posts/default", settings, NRS.newsLoaded);
+      $("#egler_news").rss("http://egler.org/feed/", settings, NRS.newsLoaded);
 		NRS.pageLoaded();
 	};
 

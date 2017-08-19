@@ -1,5 +1,5 @@
 const options = {
-    url: "http://localhost:6876", // URL of NXT remote node
+    url: "http://localhost:6876", // URL of EGL remote node
     secretPhrase: "", // Secret phrase of the current account
     isTestNet: false // Select testnet or mainnet
 };
@@ -25,7 +25,7 @@ exports.load = function(callback) {
             console.log("Started");
 
             // Load the necessary node modules and assign them to the global scope
-            // the NXT client was note designed with modularity in mind there we have
+            // the EGL client was note designed with modularity in mind there we have
             // to include every 3rd party library function in the global scope
             global.jQuery = require("jquery")(window);
             global.$ = global.jQuery;
@@ -45,8 +45,8 @@ exports.load = function(callback) {
             global.navigator = {};
             navigator.userAgent = "";
 
-            // Now load some NXT specific libraries into the global scope
-            global.NxtAddress = require('./util/nxtaddress');
+            // Now load some EGL specific libraries into the global scope
+            global.EagleAddress = require('./util/egladdress');
             global.curve25519 = require('./crypto/curve25519');
             global.curve25519_ = require('./crypto/curve25519_');
             require('./util/extensions');
@@ -54,7 +54,7 @@ exports.load = function(callback) {
 
             // Now start loading the client itself
             // The main challenge is that in node every JavaScript file is a module with it's own scope
-            // however the NXT client relies on a global browser scope which defines the NRS object
+            // however the EGL client relies on a global browser scope which defines the NRS object
             // The idea here is to gradually compose the NRS object by adding functions from each
             // JavaScript files into the existing global.client scope
             // In addition we initialize some client specific functions which typically rely on the browser or
