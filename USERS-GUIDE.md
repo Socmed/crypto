@@ -17,7 +17,7 @@
 ----
 ## How does it work? ##
 
-### NRS (Eagle Reference Software) ###
+### ERS (Eagle Reference Software) ###
 
   - client-server application
   - JavaFX UI on supported platforms
@@ -38,7 +38,7 @@
   - start via the browser interface
   - requires only:
     - decent amount of the base currency EGL
-    - running NRS (browser or tab can be closed)
+    - running ERS (browser or tab can be closed)
     - very little CPU power
 
 ----

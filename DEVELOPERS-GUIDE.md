@@ -72,8 +72,8 @@
 ### Where to Look ###
 
   - index.html: all of the html markup for pages and modals 
-  - js/nrs.*.js: corresponding js files for each task the file name displays, one roughly for each page
-  - js/nrs.modals.*.js: The modal js (popups) for each set of popups, one for each set of modals
+  - js/ERS.*.js: corresponding js files for each task the file name displays, one roughly for each page
+  - js/ERS.modals.*.js: The modal js (popups) for each set of popups, one for each set of modals
   - any CSS: Bootstrap is used for the design, so changes to CSS rules should be generally avoided
   
 ### Programming Style ###
@@ -145,7 +145,7 @@ For providing new translation strings on the platform for the community to trans
 1. Build/download the latest translation files from Crowdin (permissions needed) and replace the language folders like ``fa``, ``pt-BR``,... with the folders downloaded. Please make sure to NOT touch the english folder ``en``.
 2. Rename all folder names to lowercase, e.g. ``es-ES`` to ``es-es``.
 3. Make some consistency checks (lengths of old/new files, "git diff" on language files)
-4. New languages can be added to ``NRS.languages`` in ``ui/js/nrs.settings.js`` file. Review the status of the languages (40-50%+ Experimental, 70-80%+ Beta, 90-95%+ Stable), eventually add new languages
+4. New languages can be added to ``ERS.languages`` in ``ui/js/ERS.settings.js`` file. Review the status of the languages (40-50%+ Experimental, 70-80%+ Beta, 90-95%+ Stable), eventually add new languages
 
 ### Mobile App ###
 

@@ -16,7 +16,7 @@ in such a way that no trusted third parties are required anymore.
 ----
 ## Get it! ##
 
-  - *pre-packaged* - `https://www.jelurida.com/`
+  - *pre-packaged* - `https://www.eaglecoin.com/`
 
   - *dependencies*:
     - *general* - Java 8
@@ -54,9 +54,9 @@ in such a way that no trusted third parties are required anymore.
   - cf. coding guidelines in DEVELOPERS-GUIDE.md
 
 ----
-## Troubleshooting the NRS (Eagle Reference Software) ##
+## Troubleshooting the ERS (Eagle Reference Software) ##
 
-  - How to Stop the NRS Server?
+  - How to Stop the ERS Server?
     - click on Eagle Stop icon, or run `./stop.sh`
     - or if started from command line, ctrl+c or close the console window
 
@@ -64,7 +64,7 @@ in such a way that no trusted third parties are required anymore.
     - report on BitBucket
 
   - Permissions Denied?
-    - no spaces and only latin characters in the path to the NRS installation directory
+    - no spaces and only latin characters in the path to the ERS installation directory
     - known jetty issue
 
 ----
