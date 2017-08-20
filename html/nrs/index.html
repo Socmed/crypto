@@ -5,7 +5,7 @@
 	<head>
 		<link href="icon.png" rel="icon" type="image/png">
 		<meta charset="UTF-8">
-		<title>NRS</title>
+		<title>ERS</title>
 		<style type="text/css">
 			body {background-color: #C0C0C0; color: #000; font-family: Tahoma; font-size: 10pt; margin: 0; padding: 0;}
 			button {box-sizing: border-box; font-family: Tahoma; font-size: 10pt; height: 40px; width: 100%;}
@@ -366,7 +366,7 @@
 									showTransactionDialog(response.recipient, response.amountEGL, response.feeEGL, response.deadline);
 								});
 								break;
-							case "processInitialData":document.title = "NRS " + response.version;
+							case "processInitialData":document.title = "ERS " + response.version;
 								if (response.unconfirmedTransactions) {
 									document.getElementById("unconfirmedTransactionsFrame").contentWindow.addTransactions(response.unconfirmedTransactions);
 								}

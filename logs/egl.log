@@ -1,0 +1,971 @@
+2017-08-20 20:57:17 INFO: egl.enableStackTraces = "true"
+2017-08-20 20:57:17 INFO: egl.enableLogTraceback = "false"
+2017-08-20 20:57:17 INFO: logging enabled
+2017-08-20 20:57:17 INFO: socksProxyHost not defined
+2017-08-20 20:57:17 INFO: socksProxyPort not defined
+2017-08-20 20:57:17 FINE: java.version = 1.8.0_144
+2017-08-20 20:57:17 FINE: java.vm.version = 25.144-b01
+2017-08-20 20:57:17 FINE: java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+2017-08-20 20:57:17 FINE: java.vendor = Oracle Corporation
+2017-08-20 20:57:17 FINE: java.vm.vendor = Oracle Corporation
+2017-08-20 20:57:17 FINE: java.home = C:\Program Files\Java\jre1.8.0_144
+2017-08-20 20:57:17 FINE: java.library.path = C:\Program Files\Java\jre1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\SysWOW64\WindowsPowerShell\v1.0\Modules\TShell\TShell\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;C:\Users\Acer\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files (x86)\Microsoft VS Code\bin;.
+2017-08-20 20:57:17 FINE: java.class.path = classes;lib\bcprov-jdk15on-157.jar;lib\core-3.3.0.jar;lib\h2-1.4.196.jar;lib\javase-3.3.0.jar;lib\javax.servlet-api-3.1.0.jar;lib\jetty-client-9.3.20.v20170531.jar;lib\jetty-continuation-9.3.20.v20170531.jar;lib\jetty-http-9.3.20.v20170531.jar;lib\jetty-io-9.3.20.v20170531.jar;lib\jetty-proxy-9.3.20.v20170531.jar;lib\jetty-security-9.3.20.v20170531.jar;lib\jetty-server-9.3.20.v20170531.jar;lib\jetty-servlet-9.3.20.v20170531.jar;lib\jetty-servlets-9.3.20.v20170531.jar;lib\jetty-util-9.3.20.v20170531.jar;lib\json-simple-1.1.1.jar;lib\lucene-analyzers-common-5.3.2.jar;lib\lucene-core-5.3.2.jar;lib\lucene-queries-5.3.2.jar;lib\lucene-queryparser-5.3.2.jar;lib\rhino-1.7.7.1.jar;lib\slf4j-api-1.7.22.jar;lib\slf4j-jdk14-1.7.22.jar;lib\tika-core-1.13.jar;lib\tika-parsers-1.13.jar;lib\websocket-api-9.3.20.v20170531.jar;lib\websocket-client-9.3.20.v20170531.jar;lib\websocket-common-9.3.20.v20170531.jar;lib\websocket-server-9.3.20.v20170531.jar;lib\websocket-servlet-9.3.20.v20170531.jar;lib\weupnp-0.1.4.jar;conf;addons\classes;addons\lib\*
+2017-08-20 20:57:17 FINE: os.arch = amd64
+2017-08-20 20:57:17 FINE: sun.arch.data.model = 64
+2017-08-20 20:57:17 FINE: os.name = Windows 10
+2017-08-20 20:57:17 FINE: file.encoding = Cp1252
+2017-08-20 20:57:17 FINE: java.security.policy = null
+2017-08-20 20:57:17 FINE: java.security.manager = null
+2017-08-20 20:57:17 FINE: egl.runtime.mode = desktop
+2017-08-20 20:57:17 FINE: egl.runtime.dirProvider = null
+2017-08-20 20:57:17 FINE: availableProcessors = 4
+2017-08-20 20:57:17 FINE: maxMemory = 1866465280
+2017-08-20 20:57:17 FINE: processId = 7212
+2017-08-20 20:57:17 INFO: egl.isTestnet = "false"
+2017-08-20 20:57:17 INFO: egl.isOffline = "false"
+2017-08-20 20:57:17 INFO: egl.isLightClient = "false"
+2017-08-20 20:57:17 INFO: egl.customLoginWarning not defined
+2017-08-20 20:57:17 INFO: egl.maxRollback = "800"
+2017-08-20 20:57:17 INFO: egl.forgingDelay = "20"
+2017-08-20 20:57:17 INFO: egl.forgingSpeedup = "3"
+2017-08-20 20:57:17 INFO: egl.maxPrunableLifetime = "7776000"
+2017-08-20 20:57:17 INFO: egl.includeExpiredPrunable = "true"
+2017-08-20 20:57:17 INFO: egl.correctInvalidFees = "false"
+2017-08-20 20:57:17 INFO: egl.statementLogThreshold = "10000"
+2017-08-20 20:57:17 INFO: egl.transactionLogThreshold = "15000"
+2017-08-20 20:57:17 INFO: egl.transactionLogInterval = "15"
+2017-08-20 20:57:17 INFO: egl.dbCacheKB = "0"
+2017-08-20 20:57:17 INFO: egl.dbUrl not defined
+2017-08-20 20:57:17 INFO: egl.dbType = "h2"
+2017-08-20 20:57:17 INFO: egl.dbDir = "./egl_db/egl"
+2017-08-20 20:57:17 INFO: egl.dbParams = "DB_CLOSE_ON_EXIT=FALSE;MVCC=TRUE;MV_STORE=FALSE"
+2017-08-20 20:57:17 INFO: egl.dbUsername = "sa"
+2017-08-20 20:57:17 INFO: egl.dbPassword = "{not logged}"
+2017-08-20 20:57:17 INFO: egl.maxDbConnections = "30"
+2017-08-20 20:57:17 INFO: egl.dbLoginTimeout = "70"
+2017-08-20 20:57:17 INFO: egl.dbDefaultLockTimeout = "60"
+2017-08-20 20:57:17 INFO: egl.dbMaxMemoryRows = "1000000"
+2017-08-20 20:57:17 FINE: Database jdbc url set to jdbc:h2:C:\crypto_eagle_coin_phase_one\.\egl_db\egl;DB_CLOSE_ON_EXIT=FALSE;MVCC=TRUE;MV_STORE=FALSE;CACHE_SIZE=262144 username sa
+2017-08-20 20:57:17 INFO: egl.launchDesktopApplication = "true"
+2017-08-20 20:57:17 INFO: egl.useStrongSecureRandom = "false"
+2017-08-20 20:57:18 FINE: Database connection pool current size: 1
+2017-08-20 20:57:18 INFO: Initializing an empty database
+2017-08-20 20:57:18 FINE: Database connection pool current size: 2
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS block (db_id IDENTITY, id BIGINT NOT NULL, version INT NOT NULL, timestamp INT NOT NULL, previous_block_id BIGINT, total_amount BIGINT NOT NULL, total_fee BIGINT NOT NULL, payload_length INT NOT NULL, previous_block_hash BINARY(32), cumulative_difficulty VARBINARY NOT NULL, base_target BIGINT NOT NULL, next_block_id BIGINT, height INT NOT NULL, generation_signature BINARY(64) NOT NULL, block_signature BINARY(64) NOT NULL, payload_hash BINARY(32) NOT NULL, generator_id BIGINT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS block_id_idx ON block (id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS transaction (db_id IDENTITY, id BIGINT NOT NULL, deadline SMALLINT NOT NULL, recipient_id BIGINT, amount BIGINT NOT NULL, fee BIGINT NOT NULL, full_hash BINARY(32) NOT NULL, height INT NOT NULL, block_id BIGINT NOT NULL, FOREIGN KEY (block_id) REFERENCES block (id) ON DELETE CASCADE, signature BINARY(64) NOT NULL, timestamp INT NOT NULL, type TINYINT NOT NULL, subtype TINYINT NOT NULL, sender_id BIGINT NOT NULL, block_timestamp INT NOT NULL, referenced_transaction_full_hash BINARY(32), transaction_index SMALLINT NOT NULL, phased BOOLEAN NOT NULL DEFAULT FALSE, attachment_bytes VARBINARY, version TINYINT NOT NULL, has_message BOOLEAN NOT NULL DEFAULT FALSE, has_encrypted_message BOOLEAN NOT NULL DEFAULT FALSE, has_public_key_announcement BOOLEAN NOT NULL DEFAULT FALSE, has_prunable_message BOOLEAN NOT NULL DEFAULT FALSE, has_prunable_attachment BOOLEAN NOT NULL DEFAULT FALSE, ec_block_height INT DEFAULT NULL, ec_block_id BIGINT DEFAULT NULL, has_encrypttoself_message BOOLEAN NOT NULL DEFAULT FALSE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS transaction_id_idx ON transaction (id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS block_height_idx ON block (height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS block_generator_id_idx ON block (generator_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS transaction_sender_id_idx ON transaction (sender_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS transaction_recipient_id_idx ON transaction (recipient_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS peer (address VARCHAR PRIMARY KEY, last_updated INT, services BIGINT)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS transaction_block_timestamp_idx ON transaction (block_timestamp DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS alias (db_id IDENTITY, id BIGINT NOT NULL, account_id BIGINT NOT NULL, alias_name VARCHAR NOT NULL, alias_name_lower VARCHAR AS LOWER (alias_name) NOT NULL, alias_uri VARCHAR NOT NULL, timestamp INT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS alias_id_height_idx ON alias (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS alias_account_id_idx ON alias (account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS alias_name_lower_idx ON alias (alias_name_lower)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS alias_offer (db_id IDENTITY, id BIGINT NOT NULL, price BIGINT NOT NULL, buyer_id BIGINT, height INT NOT NULL, latest BOOLEAN DEFAULT TRUE NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS alias_offer_id_height_idx ON alias_offer (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS asset (db_id IDENTITY, id BIGINT NOT NULL, account_id BIGINT NOT NULL, name VARCHAR NOT NULL, description VARCHAR, quantity BIGINT NOT NULL, decimals TINYINT NOT NULL, initial_quantity BIGINT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS asset_account_id_idx ON asset (account_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS trade (db_id IDENTITY, asset_id BIGINT NOT NULL, block_id BIGINT NOT NULL, ask_order_id BIGINT NOT NULL, bid_order_id BIGINT NOT NULL, ask_order_height INT NOT NULL, bid_order_height INT NOT NULL, seller_id BIGINT NOT NULL, buyer_id BIGINT NOT NULL, is_buy BOOLEAN NOT NULL, quantity BIGINT NOT NULL, price BIGINT NOT NULL, timestamp INT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS trade_asset_id_idx ON trade (asset_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS trade_seller_id_idx ON trade (seller_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS trade_buyer_id_idx ON trade (buyer_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS ask_order (db_id IDENTITY, id BIGINT NOT NULL, account_id BIGINT NOT NULL, asset_id BIGINT NOT NULL, price BIGINT NOT NULL, transaction_index SMALLINT NOT NULL, transaction_height INT NOT NULL, quantity BIGINT NOT NULL, creation_height INT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS ask_order_id_height_idx ON ask_order (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS ask_order_account_id_idx ON ask_order (account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS ask_order_asset_id_price_idx ON ask_order (asset_id, price)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS bid_order (db_id IDENTITY, id BIGINT NOT NULL, account_id BIGINT NOT NULL, asset_id BIGINT NOT NULL, price BIGINT NOT NULL, transaction_index SMALLINT NOT NULL, transaction_height INT NOT NULL, quantity BIGINT NOT NULL, creation_height INT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS bid_order_id_height_idx ON bid_order (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS bid_order_account_id_idx ON bid_order (account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS bid_order_asset_id_price_idx ON bid_order (asset_id, price DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS goods (db_id IDENTITY, id BIGINT NOT NULL, seller_id BIGINT NOT NULL, name VARCHAR NOT NULL, description VARCHAR, parsed_tags ARRAY, tags VARCHAR, timestamp INT NOT NULL, quantity INT NOT NULL, price BIGINT NOT NULL, delisted BOOLEAN NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS goods_id_height_idx ON goods (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS goods_seller_id_name_idx ON goods (seller_id, name)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS goods_timestamp_idx ON goods (timestamp DESC, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS purchase (db_id IDENTITY, id BIGINT NOT NULL, buyer_id BIGINT NOT NULL, goods_id BIGINT NOT NULL, seller_id BIGINT NOT NULL, quantity INT NOT NULL, price BIGINT NOT NULL, deadline INT NOT NULL, note VARBINARY, nonce BINARY(32), timestamp INT NOT NULL, pending BOOLEAN NOT NULL, goods VARBINARY, goods_nonce BINARY(32), goods_is_text BOOLEAN NOT NULL DEFAULT TRUE, refund_note VARBINARY, refund_nonce BINARY(32), has_feedback_notes BOOLEAN NOT NULL DEFAULT FALSE, has_public_feedbacks BOOLEAN NOT NULL DEFAULT FALSE, discount BIGINT NOT NULL, refund BIGINT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS purchase_id_height_idx ON purchase (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS purchase_buyer_id_height_idx ON purchase (buyer_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS purchase_seller_id_height_idx ON purchase (seller_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS purchase_deadline_idx ON purchase (deadline DESC, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS account (db_id IDENTITY, id BIGINT NOT NULL, balance BIGINT NOT NULL, unconfirmed_balance BIGINT NOT NULL, forged_balance BIGINT NOT NULL, active_lessee_id BIGINT, has_control_phasing BOOLEAN NOT NULL DEFAULT FALSE, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS account_id_height_idx ON account (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS account_asset (db_id IDENTITY, account_id BIGINT NOT NULL, asset_id BIGINT NOT NULL, quantity BIGINT NOT NULL, unconfirmed_quantity BIGINT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS account_asset_id_height_idx ON account_asset (account_id, asset_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS account_guaranteed_balance (db_id IDENTITY, account_id BIGINT NOT NULL, additions BIGINT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS account_guaranteed_balance_id_height_idx ON account_guaranteed_balance (account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS purchase_feedback (db_id IDENTITY, id BIGINT NOT NULL, feedback_data VARBINARY NOT NULL, feedback_nonce BINARY(32) NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS purchase_feedback_id_height_idx ON purchase_feedback (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS purchase_public_feedback (db_id IDENTITY, id BIGINT NOT NULL, public_feedback VARCHAR NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS purchase_public_feedback_id_height_idx ON purchase_public_feedback (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS unconfirmed_transaction (db_id IDENTITY, id BIGINT NOT NULL, expiration INT NOT NULL, transaction_height INT NOT NULL, fee_per_byte BIGINT NOT NULL, arrival_timestamp BIGINT NOT NULL, transaction_bytes VARBINARY NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS unconfirmed_transaction_id_idx ON unconfirmed_transaction (id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS asset_transfer (db_id IDENTITY, id BIGINT NOT NULL, asset_id BIGINT NOT NULL, sender_id BIGINT NOT NULL, recipient_id BIGINT NOT NULL, quantity BIGINT NOT NULL, timestamp INT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS asset_transfer_id_idx ON asset_transfer (id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS asset_transfer_asset_id_idx ON asset_transfer (asset_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS asset_transfer_sender_id_idx ON asset_transfer (sender_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS asset_transfer_recipient_id_idx ON asset_transfer (recipient_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_asset_quantity_idx ON account_asset (quantity DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS purchase_timestamp_idx ON purchase (timestamp DESC, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS ask_order_creation_idx ON ask_order (creation_height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS bid_order_creation_idx ON bid_order (creation_height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS block_timestamp_idx ON block (timestamp DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE goods ADD COLUMN IF NOT EXISTS parsed_tags ARRAY
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS tag (db_id IDENTITY, tag VARCHAR NOT NULL, in_stock_count INT NOT NULL, total_count INT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS tag_tag_idx ON tag (tag, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS tag_in_stock_count_idx ON tag (in_stock_count DESC, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS currency (db_id IDENTITY, id BIGINT NOT NULL, account_id BIGINT NOT NULL, name VARCHAR NOT NULL, name_lower VARCHAR AS LOWER (name) NOT NULL, code VARCHAR NOT NULL, description VARCHAR, type INT NOT NULL, initial_supply BIGINT NOT NULL DEFAULT 0, reserve_supply BIGINT NOT NULL, max_supply BIGINT NOT NULL, creation_height INT NOT NULL, issuance_height INT NOT NULL, min_reserve_per_unit_nqt BIGINT NOT NULL, min_difficulty TINYINT NOT NULL, max_difficulty TINYINT NOT NULL, ruleset TINYINT NOT NULL, algorithm TINYINT NOT NULL, decimals TINYINT NOT NULL DEFAULT 0,height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS currency_id_height_idx ON currency (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_account_id_idx ON currency (account_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS account_currency (db_id IDENTITY, account_id BIGINT NOT NULL, currency_id BIGINT NOT NULL, units BIGINT NOT NULL, unconfirmed_units BIGINT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS account_currency_id_height_idx ON account_currency (account_id, currency_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS currency_founder (db_id IDENTITY, currency_id BIGINT NOT NULL, account_id BIGINT NOT NULL, amount BIGINT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS currency_founder_currency_id_idx ON currency_founder (currency_id, account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS currency_mint (db_id IDENTITY, currency_id BIGINT NOT NULL, account_id BIGINT NOT NULL, counter BIGINT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS currency_mint_currency_id_account_id_idx ON currency_mint (currency_id, account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS buy_offer (db_id IDENTITY, id BIGINT NOT NULL, currency_id BIGINT NOT NULL, account_id BIGINT NOT NULL,rate BIGINT NOT NULL, unit_limit BIGINT NOT NULL, supply BIGINT NOT NULL, expiration_height INT NOT NULL, transaction_height INT NOT NULL, creation_height INT NOT NULL, transaction_index SMALLINT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS buy_offer_id_idx ON buy_offer (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS buy_offer_currency_id_account_id_idx ON buy_offer (currency_id, account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS sell_offer (db_id IDENTITY, id BIGINT NOT NULL, currency_id BIGINT NOT NULL, account_id BIGINT NOT NULL, rate BIGINT NOT NULL, unit_limit BIGINT NOT NULL, supply BIGINT NOT NULL, expiration_height INT NOT NULL, transaction_height INT NOT NULL, creation_height INT NOT NULL, transaction_index SMALLINT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS sell_offer_id_idx ON sell_offer (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS sell_offer_currency_id_account_id_idx ON sell_offer (currency_id, account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS exchange (db_id IDENTITY, transaction_id BIGINT NOT NULL, currency_id BIGINT NOT NULL, block_id BIGINT NOT NULL, offer_id BIGINT NOT NULL, seller_id BIGINT NOT NULL, buyer_id BIGINT NOT NULL, units BIGINT NOT NULL, rate BIGINT NOT NULL, timestamp INT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS exchange_offer_idx ON exchange (transaction_id, offer_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS exchange_currency_id_idx ON exchange (currency_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS exchange_seller_id_idx ON exchange (seller_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS exchange_buyer_id_idx ON exchange (buyer_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS currency_transfer (db_id IDENTITY, id BIGINT NOT NULL, currency_id BIGINT NOT NULL, sender_id BIGINT NOT NULL, recipient_id BIGINT NOT NULL, units BIGINT NOT NULL, timestamp INT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS currency_transfer_id_idx ON currency_transfer (id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_transfer_currency_id_idx ON currency_transfer (currency_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_transfer_sender_id_idx ON currency_transfer (sender_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_transfer_recipient_id_idx ON currency_transfer (recipient_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_currency_units_idx ON account_currency (units DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_name_idx ON currency (name_lower, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_code_idx ON currency (code, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS buy_offer_rate_height_idx ON buy_offer (rate DESC, creation_height ASC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS sell_offer_rate_height_idx ON sell_offer (rate ASC, creation_height ASC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS unconfirmed_transaction_height_fee_timestamp_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE unconfirmed_transaction DROP COLUMN IF EXISTS timestamp
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE unconfirmed_transaction ADD COLUMN IF NOT EXISTS arrival_timestamp BIGINT NOT NULL DEFAULT 0
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS unconfirmed_transaction_height_fee_timestamp_idx ON unconfirmed_transaction (transaction_height ASC, fee_per_byte DESC, arrival_timestamp ASC)
+2017-08-20 20:57:18 INFO: egl.trimDerivedTables = "true"
+2017-08-20 20:57:18 INFO: egl.numberOfForkConfirmations = "2"
+2017-08-20 20:57:18 INFO: egl.simulateEndlessDownload not defined, using default false
+2017-08-20 20:57:18 INFO: egl.trimFrequency = "1000"
+2017-08-20 20:57:18 INFO: egl.disableGetMoreBlocksThread not defined, using default false
+2017-08-20 20:57:18 INFO: Deleting blockchain...
+2017-08-20 20:57:18 FINE: Average database transaction time is 0.000 seconds
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE transaction ADD COLUMN IF NOT EXISTS transaction_index SMALLINT NOT NULL
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE ask_order
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE ask_order ADD COLUMN IF NOT EXISTS transaction_index SMALLINT NOT NULL
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE bid_order
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE bid_order ADD COLUMN IF NOT EXISTS transaction_index SMALLINT NOT NULL
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS scan (rescan BOOLEAN NOT NULL DEFAULT FALSE, height INT NOT NULL DEFAULT 0, validate BOOLEAN NOT NULL DEFAULT FALSE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+INSERT INTO scan (rescan, height, validate) VALUES (false, 0, false)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_creation_height_idx ON currency (creation_height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS currency_supply (db_id IDENTITY, id BIGINT NOT NULL, current_supply BIGINT NOT NULL, current_reserve_per_unit_nqt BIGINT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS currency_supply_id_height_idx ON currency_supply (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE currency
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE currency DROP COLUMN IF EXISTS current_supply
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE currency DROP COLUMN IF EXISTS current_reserve_per_unit_nqt
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS public_key (db_id IDENTITY, account_id BIGINT NOT NULL, public_key BINARY(32), height INT NOT NULL, FOREIGN KEY (height) REFERENCES block (height) ON DELETE CASCADE, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS public_key
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE block DROP COLUMN IF EXISTS generator_public_key
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE transaction DROP COLUMN IF EXISTS sender_public_key
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_guaranteed_balance_height_idx ON account_guaranteed_balance(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS asset_transfer_height_idx ON asset_transfer(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_transfer_height_idx ON currency_transfer(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS exchange_height_idx ON exchange(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS trade_height_idx ON trade(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP TABLE IF EXISTS poll
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP TABLE IF EXISTS vote
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS vote (db_id IDENTITY, id BIGINT NOT NULL, poll_id BIGINT NOT NULL, voter_id BIGINT NOT NULL, vote_bytes VARBINARY NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS vote_id_idx ON vote (id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS vote_poll_id_idx ON vote (poll_id, voter_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS poll (db_id IDENTITY, id BIGINT NOT NULL, account_id BIGINT NOT NULL, name VARCHAR NOT NULL, description VARCHAR, options ARRAY NOT NULL, min_num_options TINYINT, max_num_options TINYINT, min_range_value TINYINT, max_range_value TINYINT, timestamp INT NOT NULL, finish_height INT NOT NULL, voting_model TINYINT NOT NULL, min_balance BIGINT, min_balance_model TINYINT, holding_id BIGINT, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS poll_result (db_id IDENTITY, poll_id BIGINT NOT NULL, result BIGINT, weight BIGINT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE transaction ADD COLUMN IF NOT EXISTS phased BOOLEAN NOT NULL DEFAULT FALSE
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS phasing_poll (db_id IDENTITY, id BIGINT NOT NULL, account_id BIGINT NOT NULL, whitelist_size TINYINT NOT NULL DEFAULT 0, finish_height INT NOT NULL, voting_model TINYINT NOT NULL, quorum BIGINT, min_balance BIGINT, holding_id BIGINT, min_balance_model TINYINT, hashed_secret VARBINARY, algorithm TINYINT, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS phasing_vote (db_id IDENTITY, vote_id BIGINT NOT NULL, transaction_id BIGINT NOT NULL, voter_id BIGINT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS phasing_poll_voter (db_id IDENTITY, transaction_id BIGINT NOT NULL, voter_id BIGINT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS vote_height_idx ON vote(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS poll_id_idx ON poll(id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS poll_height_idx ON poll(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS poll_account_idx ON poll(account_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS poll_finish_height_idx ON poll(finish_height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS poll_result_poll_id_idx ON poll_result(poll_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS poll_result_height_idx ON poll_result(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS phasing_poll_id_idx ON phasing_poll(id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS phasing_poll_height_idx ON phasing_poll(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS phasing_poll_account_id_idx ON phasing_poll(account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS phasing_poll_holding_id_idx ON phasing_poll(holding_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS phasing_vote_transaction_voter_idx ON phasing_vote(transaction_id, voter_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS phasing_poll_voter_transaction_voter_idx ON phasing_poll_voter(transaction_id, voter_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS phasing_poll_result (db_id IDENTITY, id BIGINT NOT NULL, result BIGINT NOT NULL, approved BOOLEAN NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS phasing_poll_result_id_idx ON phasing_poll_result(id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS phasing_poll_result_height_idx ON phasing_poll_result(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_founder_account_id_idx ON currency_founder (account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE trade
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE trade ADD COLUMN IF NOT EXISTS is_buy BOOLEAN NOT NULL
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS phasing_poll_voter_height_idx ON phasing_poll_voter(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE ask_order
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE ask_order ADD COLUMN IF NOT EXISTS transaction_height INT NOT NULL
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE bid_order
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE bid_order ADD COLUMN IF NOT EXISTS transaction_height INT NOT NULL
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE buy_offer
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE buy_offer ADD COLUMN IF NOT EXISTS transaction_height INT NOT NULL
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE sell_offer
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE sell_offer ADD COLUMN IF NOT EXISTS transaction_height INT NOT NULL
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS phasing_vote_height_idx ON phasing_vote(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS transaction_full_hash_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS trade_ask_bid_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS trade_ask_idx ON trade (ask_order_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS trade_bid_idx ON trade (bid_order_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS account_info (db_id IDENTITY, account_id BIGINT NOT NULL, name VARCHAR, description VARCHAR, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS account_info_id_height_idx ON account_info (account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS name
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS description
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS message_pattern_regex
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS message_pattern_flags
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE poll
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE poll ADD COLUMN IF NOT EXISTS timestamp INT NOT NULL
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS prunable_message (db_id IDENTITY, id BIGINT NOT NULL, sender_id BIGINT NOT NULL, recipient_id BIGINT, message VARBINARY NOT NULL, is_text BOOLEAN NOT NULL, is_compressed BOOLEAN NOT NULL, encrypted_message VARBINARY, encrypted_is_text BOOLEAN DEFAULT FALSE, is_encrypted BOOLEAN NOT NULL, timestamp INT NOT NULL, expiration INT NOT NULL, height INT NOT NULL, FOREIGN KEY (height) REFERENCES block (height) ON DELETE CASCADE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS prunable_message_id_idx ON prunable_message (id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS prunable_message_expiration_idx ON prunable_message (expiration DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE transaction ADD COLUMN IF NOT EXISTS has_prunable_message BOOLEAN NOT NULL DEFAULT FALSE
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE unconfirmed_transaction
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE unconfirmed_transaction ADD COLUMN IF NOT EXISTS prunable_json VARCHAR
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS prunable_message_sender_idx ON prunable_message (sender_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS prunable_message_recipient_idx ON prunable_message (recipient_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE transaction ADD COLUMN IF NOT EXISTS has_prunable_encrypted_message BOOLEAN NOT NULL DEFAULT FALSE
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE prunable_message ALTER COLUMN expiration RENAME TO transaction_timestamp
+2017-08-20 20:57:18 FINE: Will apply sql:
+UPDATE prunable_message SET transaction_timestamp = SELECT timestamp FROM transaction WHERE prunable_message.id = transaction.id
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER INDEX prunable_message_expiration_idx RENAME TO prunable_message_transaction_timestamp_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE prunable_message ALTER COLUMN timestamp RENAME TO block_timestamp
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS prunable_message_timestamp_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS prunable_message_block_timestamp_dbid_idx ON prunable_message (block_timestamp DESC, db_id DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS prunable_message_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS public_key_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS tagged_data (db_id IDENTITY, id BIGINT NOT NULL, account_id BIGINT NOT NULL, name VARCHAR NOT NULL, description VARCHAR, tags VARCHAR, parsed_tags ARRAY, type VARCHAR, data VARBINARY NOT NULL, is_text BOOLEAN NOT NULL, filename VARCHAR, channel VARCHAR, block_timestamp INT NOT NULL, transaction_timestamp INT NOT NULL, height INT NOT NULL, FOREIGN KEY (height) REFERENCES block (height) ON DELETE CASCADE, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS tagged_data_id_height_idx ON tagged_data (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS tagged_data_expiration_idx ON tagged_data (transaction_timestamp DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS tagged_data_account_id_height_idx ON tagged_data (account_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS tagged_data_block_timestamp_height_db_id_idx ON tagged_data (block_timestamp DESC, height DESC, db_id DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS data_tag (db_id IDENTITY, tag VARCHAR NOT NULL, tag_count INT NOT NULL, height INT NOT NULL, FOREIGN KEY (height) REFERENCES block (height) ON DELETE CASCADE, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS data_tag_tag_height_idx ON data_tag (tag, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS data_tag_count_height_idx ON data_tag (tag_count DESC, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS tagged_data_timestamp (db_id IDENTITY, id BIGINT NOT NULL, timestamp INT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS tagged_data_timestamp_id_height_idx ON tagged_data_timestamp (id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE tagged_data ADD COLUMN IF NOT EXISTS channel VARCHAR
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS tagged_data_channel_idx ON tagged_data (channel, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE peer ADD COLUMN IF NOT EXISTS last_updated INT
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS account_current_lessee_id_leasing_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE account
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account ADD COLUMN IF NOT EXISTS active_lessee_id BIGINT
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS current_leasing_height_from
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS current_leasing_height_to
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS current_lessee_id
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS next_leasing_height_from
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS next_leasing_height_to
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS next_lessee_id
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_active_lessee_id_idx ON account (active_lessee_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS account_lease (db_id IDENTITY, lessor_id BIGINT NOT NULL, current_leasing_height_from INT, current_leasing_height_to INT, current_lessee_id BIGINT, next_leasing_height_from INT, next_leasing_height_to INT, next_lessee_id BIGINT, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS account_lease_lessor_id_height_idx ON account_lease (lessor_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_lease_current_leasing_height_from_idx ON account_lease (current_leasing_height_from)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_lease_current_leasing_height_to_idx ON account_lease (current_leasing_height_to)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_lease_height_id_idx ON account_lease (height, lessor_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_asset_asset_id_idx ON account_asset (asset_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_currency_currency_id_idx ON account_currency (currency_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_issuance_height_idx ON currency (issuance_height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS unconfirmed_transaction_expiration_idx ON unconfirmed_transaction (expiration DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS account_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_height_id_idx ON account (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS account_asset_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_asset_height_id_idx ON account_asset (height, account_id, asset_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS account_currency_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_currency_height_id_idx ON account_currency (height, account_id, currency_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS alias_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS alias_height_id_idx ON alias (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS alias_offer_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS alias_offer_height_id_idx ON alias_offer (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS ask_order_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS ask_order_height_id_idx ON ask_order (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS bid_order_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS bid_order_height_id_idx ON bid_order (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS buy_offer_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS buy_offer_height_id_idx ON buy_offer (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS currency_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_height_id_idx ON currency (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS currency_founder_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_founder_height_id_idx ON currency_founder (height, currency_id, account_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS currency_mint_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_mint_height_id_idx ON currency_mint (height, currency_id, account_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS currency_supply_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS currency_supply_height_id_idx ON currency_supply (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS goods_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS goods_height_id_idx ON goods (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS purchase_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS purchase_height_id_idx ON purchase (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS purchase_feedback_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS purchase_feedback_height_id_idx ON purchase_feedback (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS purchase_public_feedback_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS purchase_public_feedback_height_id_idx ON purchase_public_feedback (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS sell_offer_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS sell_offer_height_id_idx ON sell_offer (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS tag_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS tag_height_tag_idx ON tag (height, tag)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS account_info_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_info_height_id_idx ON account_info (height, account_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS tagged_data_timestamp_height_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS tagged_data_timestamp_height_id_idx ON tagged_data_timestamp (height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS trade_height_db_id_idx ON trade (height DESC, db_id DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS exchange_height_db_id_idx ON exchange (height DESC, db_id DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS exchange_request (db_id IDENTITY, id BIGINT NOT NULL, account_id BIGINT NOT NULL, currency_id BIGINT NOT NULL, units BIGINT NOT NULL, rate BIGINT NOT NULL, is_buy BOOLEAN NOT NULL, timestamp INT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS exchange_request_id_idx ON exchange_request (id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS exchange_request_account_currency_idx ON exchange_request (account_id, currency_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS exchange_request_currency_idx ON exchange_request (currency_id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS exchange_request_height_db_id_idx ON exchange_request (height DESC, db_id DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS exchange_request_height_idx ON exchange_request (height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS account_ledger (db_id IDENTITY, account_id BIGINT NOT NULL, event_type TINYINT NOT NULL, event_id BIGINT NOT NULL, holding_type TINYINT NOT NULL, holding_id BIGINT, change BIGINT NOT NULL, balance BIGINT NOT NULL, block_id BIGINT NOT NULL, height INT NOT NULL, timestamp INT NOT NULL)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_ledger_id_idx ON account_ledger(account_id, db_id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_ledger_height_idx ON account_ledger(height)
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE peer ADD COLUMN IF NOT EXISTS services BIGINT
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE asset
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE asset ADD COLUMN IF NOT EXISTS latest BOOLEAN NOT NULL DEFAULT TRUE
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS asset_id_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE asset ADD COLUMN IF NOT EXISTS initial_quantity BIGINT NOT NULL
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS tagged_data_extend (db_id IDENTITY, id BIGINT NOT NULL, extend_id BIGINT NOT NULL, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS tagged_data_extend_id_height_idx ON tagged_data_extend(id, height DESC)
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS tagged_data_extend_height_id_idx ON tagged_data_extend(height, id)
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE transaction ADD COLUMN IF NOT EXISTS has_prunable_attachment BOOLEAN NOT NULL DEFAULT FALSE
+2017-08-20 20:57:18 FINE: Will apply sql:
+UPDATE transaction SET has_prunable_attachment = TRUE WHERE type = 6
+2017-08-20 20:57:18 FINE: Will apply sql:
+TRUNCATE TABLE account
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS creation_height
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE account DROP COLUMN IF EXISTS key_height
+2017-08-20 20:57:18 FINE: Will apply sql:
+DROP INDEX IF EXISTS public_key_account_id_idx
+2017-08-20 20:57:18 FINE: Will apply sql:
+ALTER TABLE public_key ADD COLUMN IF NOT EXISTS latest BOOLEAN NOT NULL DEFAULT TRUE
+2017-08-20 20:57:18 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS public_key_account_id_height_idx ON public_key (account_id, height DESC)
+2017-08-20 20:57:18 INFO: Lucene search index deleted
+2017-08-20 20:57:19 INFO: H2 fulltext function aliases dropped
+2017-08-20 20:57:19 INFO: NRS fulltext schema created
+2017-08-20 20:57:19 INFO: Rebuilding the Lucene search index
+2017-08-20 20:57:19 INFO: Lucene search index deleted
+2017-08-20 20:57:19 INFO: Lucene search index successfully rebuilt
+2017-08-20 20:57:19 INFO: NRS fulltext aliases created
+2017-08-20 20:57:19 FINE: Will apply sql:
+DROP INDEX IF EXISTS asset_height_idx
+2017-08-20 20:57:19 FINE: Will apply sql:
+DROP INDEX IF EXISTS asset_height_db_id_idx
+2017-08-20 20:57:19 FINE: Will apply sql:
+DROP INDEX IF EXISTS asset_id_height_idx
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS asset_id_height_idx ON asset (id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS asset_height_id_idx ON asset (height, id)
+2017-08-20 20:57:19 FINE: Will apply sql:
+TRUNCATE TABLE account_ledger
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS shuffling (db_id IDENTITY, id BIGINT NOT NULL, holding_id BIGINT NULL, holding_type TINYINT NOT NULL, issuer_id BIGINT NOT NULL, amount BIGINT NOT NULL, participant_count TINYINT NOT NULL, blocks_remaining SMALLINT NULL, stage TINYINT NOT NULL, assignee_account_id BIGINT NULL, registrant_count TINYINT NOT NULL, recipient_public_keys ARRAY, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS shuffling_id_height_idx ON shuffling (id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS shuffling_holding_id_height_idx ON shuffling (holding_id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS shuffling_assignee_account_id_height_idx ON shuffling (assignee_account_id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS shuffling_height_id_idx ON shuffling (height, id)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS shuffling_participant (db_id IDENTITY, shuffling_id BIGINT NOT NULL, account_id BIGINT NOT NULL, next_account_id BIGINT NULL, participant_index TINYINT NOT NULL, state TINYINT NOT NULL, blame_data ARRAY, key_seeds ARRAY, data_transaction_full_hash BINARY(32), height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS shuffling_participant_shuffling_id_account_id_idx ON shuffling_participant (shuffling_id, account_id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS shuffling_participant_height_idx ON shuffling_participant (height, shuffling_id, account_id)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS shuffling_data (db_id IDENTITY, shuffling_id BIGINT NOT NULL, account_id BIGINT NOT NULL, data ARRAY, transaction_timestamp INT NOT NULL, height INT NOT NULL, FOREIGN KEY (height) REFERENCES block (height) ON DELETE CASCADE)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS shuffling_data_id_height_idx ON shuffling_data (shuffling_id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX shuffling_data_transaction_timestamp_idx ON shuffling_data (transaction_timestamp DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS phasing_poll_linked_transaction (db_id IDENTITY, transaction_id BIGINT NOT NULL, linked_full_hash BINARY(32) NOT NULL, linked_transaction_id BIGINT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS phasing_poll_linked_transaction_height_idx ON phasing_poll_linked_transaction (height)
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER TABLE phasing_poll DROP COLUMN IF EXISTS linked_full_hashes
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS account_control_phasing (db_id IDENTITY, account_id BIGINT NOT NULL, whitelist ARRAY, voting_model TINYINT NOT NULL, quorum BIGINT, min_balance BIGINT, holding_id BIGINT, min_balance_model TINYINT, max_fees BIGINT, min_duration SMALLINT, max_duration SMALLINT, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER TABLE account ADD COLUMN IF NOT EXISTS has_control_phasing BOOLEAN NOT NULL DEFAULT FALSE
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS account_control_phasing_id_height_idx ON account_control_phasing (account_id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_control_phasing_height_id_idx ON account_control_phasing (height, account_id)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS account_property (db_id IDENTITY, id BIGINT NOT NULL, account_id BIGINT NOT NULL, setter_id BIGINT, property VARCHAR NOT NULL, value VARCHAR, height INT NOT NULL, latest BOOLEAN NOT NULL DEFAULT TRUE)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS account_property_id_height_idx ON account_property (id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_property_height_id_idx ON account_property (height, id)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_property_account_height_idx ON account_property (account_id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS account_property_setter_account_idx ON account_property (setter_id, account_id)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS asset_delete (db_id IDENTITY, id BIGINT NOT NULL, asset_id BIGINT NOT NULL, account_id BIGINT NOT NULL, quantity BIGINT NOT NULL, timestamp INT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS asset_delete_id_idx ON asset_delete (id)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS asset_delete_asset_id_idx ON asset_delete (asset_id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS asset_delete_account_id_idx ON asset_delete (account_id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS asset_delete_height_idx ON asset_delete (height)
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER TABLE prunable_message ADD COLUMN IF NOT EXISTS encrypted_message VARBINARY
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER TABLE prunable_message ADD COLUMN IF NOT EXISTS encrypted_is_text BOOLEAN DEFAULT FALSE
+2017-08-20 20:57:19 FINE: Will apply sql:
+UPDATE prunable_message SET encrypted_message = message WHERE is_encrypted IS TRUE
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER TABLE prunable_message ALTER COLUMN message SET NULL
+2017-08-20 20:57:19 FINE: Will apply sql:
+UPDATE prunable_message SET message = NULL WHERE is_encrypted IS TRUE
+2017-08-20 20:57:19 FINE: Will apply sql:
+UPDATE prunable_message SET encrypted_is_text = TRUE WHERE is_encrypted IS TRUE AND is_text IS TRUE
+2017-08-20 20:57:19 FINE: Will apply sql:
+UPDATE prunable_message SET encrypted_is_text = FALSE WHERE is_encrypted IS TRUE AND is_text IS FALSE
+2017-08-20 20:57:19 FINE: Will apply sql:
+UPDATE prunable_message SET is_text = FALSE where is_encrypted IS TRUE
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER TABLE prunable_message ALTER COLUMN is_text RENAME TO message_is_text
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER TABLE prunable_message DROP COLUMN IF EXISTS is_encrypted
+2017-08-20 20:57:19 FINE: Will apply sql:
+TRUNCATE TABLE shuffling
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER TABLE shuffling ADD COLUMN IF NOT EXISTS registrant_count TINYINT NOT NULL
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER TABLE account_property ALTER COLUMN account_id RENAME TO recipient_id
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER INDEX account_property_account_height_idx RENAME TO account_property_recipient_height_idx
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER INDEX account_property_setter_account_idx RENAME TO account_property_setter_recipient_idx
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS referenced_transaction (db_id IDENTITY, transaction_id BIGINT NOT NULL, FOREIGN KEY (transaction_id) REFERENCES transaction (id) ON DELETE CASCADE, referenced_transaction_id BIGINT NOT NULL)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS referenced_transaction_referenced_transaction_id_idx ON referenced_transaction (referenced_transaction_id)
+2017-08-20 20:57:19 FINE: Scheduled scan starting from height 0
+2017-08-20 20:57:19 FINE: Will apply sql:
+DROP INDEX IF EXISTS phasing_poll_linked_transaction_id_link_idx
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS phasing_poll_linked_transaction_id_link_idx ON phasing_poll_linked_transaction (transaction_id, linked_transaction_id)
+2017-08-20 20:57:19 FINE: Will apply sql:
+DROP INDEX IF EXISTS phasing_poll_linked_transaction_link_id_idx
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS phasing_poll_linked_transaction_link_id_idx ON phasing_poll_linked_transaction (linked_transaction_id, transaction_id)
+2017-08-20 20:57:19 FINE: Database connection pool current size: 3
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER TABLE goods ADD COLUMN IF NOT EXISTS has_image BOOLEAN NOT NULL DEFAULT FALSE
+2017-08-20 20:57:19 FINE: Will apply sql:
+ALTER TABLE purchase ADD COLUMN IF NOT EXISTS goods_is_text BOOLEAN NOT NULL DEFAULT TRUE
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS shuffling_blocks_remaining_height_idx ON shuffling (blocks_remaining, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS account_fxt (id BIGINT NOT NULL, balance VARBINARY NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS account_fxt_id_idx ON account_fxt (id, height DESC)
+2017-08-20 20:57:19 INFO: egl.logFxtBalance not defined
+2017-08-20 20:57:19 FINE: Scheduled scan starting from height 870399
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE TABLE IF NOT EXISTS asset_dividend (db_id IDENTITY, id BIGINT NOT NULL, asset_id BIGINT NOT NULL, amount BIGINT NOT NULL, dividend_height INT NOT NULL, total_dividend BIGINT NOT NULL, num_accounts BIGINT NOT NULL, timestamp INT NOT NULL, height INT NOT NULL)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE UNIQUE INDEX IF NOT EXISTS asset_dividend_id_idx ON asset_dividend (id)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS asset_dividend_asset_id_idx ON asset_dividend (asset_id, height DESC)
+2017-08-20 20:57:19 FINE: Will apply sql:
+CREATE INDEX IF NOT EXISTS asset_dividend_height_idx ON asset_dividend (height)
+2017-08-20 20:57:19 INFO: egl.enableTransactionRebroadcasting = "true"
+2017-08-20 20:57:19 INFO: egl.testUnconfirmedTransactions not defined, using default false
+2017-08-20 20:57:19 INFO: egl.maxUnconfirmedTransactions = "2000"
+2017-08-20 20:57:19 INFO: egl.disableProcessTransactionsThread not defined, using default false
+2017-08-20 20:57:19 INFO: egl.disableRebroadcastTransactionsThread not defined, using default false
+2017-08-20 20:57:19 INFO: egl.disableRemoveUnconfirmedTransactionsThread not defined, using default false
+2017-08-20 20:57:19 INFO: egl.disableProcessWaitingTransactionsThread not defined, using default false
+2017-08-20 20:57:19 INFO: egl.enablePublicKeyCache = "true"
+2017-08-20 20:57:19 INFO: egl.ledgerTrimKeep = "30000"
+2017-08-20 20:57:19 INFO: egl.ledgerAccounts = "*"
+2017-08-20 20:57:19 INFO: Account ledger is tracking all accounts
+2017-08-20 20:57:19 INFO: egl.ledgerLogUnconfirmed = "2"
+2017-08-20 20:57:19 INFO: egl.processPolls = "true"
+2017-08-20 20:57:19 INFO: egl.deleteFinishedShufflings = "false"
+2017-08-20 20:57:19 INFO: egl.hideErrorDetails = "false"
+2017-08-20 20:57:19 INFO: egl.myPlatform not defined
+2017-08-20 20:57:19 INFO: egl.myAddress not defined
+2017-08-20 20:57:19 INFO: egl.peerServerPort = "7874"
+2017-08-20 20:57:19 INFO: egl.shareMyAddress = "true"
+2017-08-20 20:57:19 INFO: egl.enablePeerUPnP = "true"
+2017-08-20 20:57:19 INFO: egl.myHallmark not defined
+2017-08-20 20:57:19 INFO: egl.adminPassword not defined
+2017-08-20 20:57:19 INFO: egl.maxAPIRecords = "100"
+2017-08-20 20:57:19 INFO: egl.enableAPIUPnP = "false"
+2017-08-20 20:57:19 INFO: egl.apiServerIdleTimeout = "30000"
+2017-08-20 20:57:19 INFO: egl.apiServerCORS = "true"
+2017-08-20 20:57:19 INFO: egl.forwardedForHeader not defined
+2017-08-20 20:57:19 INFO: egl.disabledAPIs not defined
+2017-08-20 20:57:19 INFO: egl.disabledAPITags not defined
+2017-08-20 20:57:19 INFO: egl.allowedBotHosts = "127.0.0.1; localhost; [0:0:0:0:0:0:0:1];"
+2017-08-20 20:57:19 INFO: egl.enableAPIServer = "true"
+2017-08-20 20:57:19 INFO: egl.apiServerPort = "7876"
+2017-08-20 20:57:19 INFO: egl.apiServerSSLPort = "7876"
+2017-08-20 20:57:19 INFO: egl.apiServerHost = "127.0.0.1"
+2017-08-20 20:57:19 INFO: egl.disableAdminPassword = "false"
+2017-08-20 20:57:19 INFO: egl.apiSSL = "false"
+2017-08-20 20:57:19 INFO: API server using HTTP port 7876
+2017-08-20 20:57:19 INFO: egl.apiResourceBase = "html/www"
+2017-08-20 20:57:19 INFO: egl.apiWelcomeFile = "index.html"
+2017-08-20 20:57:19 INFO: egl.javadocResourceBase = "html/doc"
+2017-08-20 20:57:19 INFO: egl.maxUploadFileSize not defined or not numeric, using default value 0
+2017-08-20 20:57:19 INFO: egl.maxUploadFileSize not defined or not numeric, using default value 0
+2017-08-20 20:57:19 INFO: egl.enableAPIServerGZIPFilter not defined, using default false
+2017-08-20 20:57:19 INFO: egl.apiFrameOptionsSameOrigin = "true"
+2017-08-20 20:57:19 FINE: My peer info:
+{"application":"NRS","services":"0","version":"1.11.7","platform":"Windows 10 amd64","shareAddress":true}
+2017-08-20 20:57:19 INFO: egl.defaultPeers = "47.74.131.167;"
+2017-08-20 20:57:19 INFO: egl.wellKnownPeers not defined
+2017-08-20 20:57:19 INFO: egl.knownBlacklistedPeers not defined
+2017-08-20 20:57:19 INFO: egl.maxNumberOfInboundConnections = "250"
+2017-08-20 20:57:19 INFO: egl.maxNumberOfOutboundConnections = "50"
+2017-08-20 20:57:19 INFO: egl.maxNumberOfConnectedPublicPeers = "20"
+2017-08-20 20:57:19 INFO: egl.maxNumberOfKnownPeers = "2000"
+2017-08-20 20:57:19 INFO: egl.minNumberOfKnownPeers = "1000"
+2017-08-20 20:57:19 INFO: egl.connectTimeout = "10000"
+2017-08-20 20:57:19 INFO: egl.readTimeout = "20000"
+2017-08-20 20:57:19 INFO: egl.enableHallmarkProtection = "true"
+2017-08-20 20:57:19 INFO: egl.pushThreshold = "0"
+2017-08-20 20:57:19 INFO: egl.pullThreshold = "0"
+2017-08-20 20:57:19 INFO: egl.useWebSockets = "true"
+2017-08-20 20:57:19 INFO: egl.webSocketIdleTimeout = "900000"
+2017-08-20 20:57:19 INFO: egl.enablePeerServerGZIPFilter = "true"
+2017-08-20 20:57:19 INFO: egl.blacklistingPeriod = "600000"
+2017-08-20 20:57:19 INFO: egl.communicationLoggingMask = "0"
+2017-08-20 20:57:19 INFO: egl.sendToPeersLimit = "10"
+2017-08-20 20:57:19 INFO: egl.usePeersDb = "true"
+2017-08-20 20:57:19 INFO: egl.savePeers = "true"
+2017-08-20 20:57:19 INFO: egl.getMorePeers = "true"
+2017-08-20 20:57:19 INFO: egl.cjdnsOnly = "false"
+2017-08-20 20:57:19 INFO: egl.ignorePeerAnnouncedAddress = "false"
+2017-08-20 20:57:19 INFO: egl.disablePeerConnectingThread not defined, using default false
+2017-08-20 20:57:19 INFO: egl.disablePeerUnBlacklistingThread not defined, using default false
+2017-08-20 20:57:19 INFO: egl.disableGetMorePeersThread not defined, using default false
+2017-08-20 20:57:19 INFO: egl.peerServerHost = "0.0.0.0"
+2017-08-20 20:57:19 INFO: egl.peerServerIdleTimeout = "30000"
+2017-08-20 20:57:19 INFO: egl.enablePeerServerDoSFilter = "true"
+2017-08-20 20:57:19 INFO: egl.peerServerDoSFilter.maxRequestsPerSec = "30"
+2017-08-20 20:57:19 INFO: egl.peerServerDoSFilter.delayMs = "1000"
+2017-08-20 20:57:19 INFO: egl.peerServerDoSFilter.maxRequestMs = "300000"
+2017-08-20 20:57:19 INFO: egl.enableAPIProxy = "true"
+2017-08-20 20:57:19 INFO: egl.apiProxyBlacklistingPeriod = "1800000"
+2017-08-20 20:57:19 INFO: egl.forceAPIProxyServerURL not defined
+2017-08-20 20:57:19 INFO: egl.disableAPIProxyPeersUpdateThread not defined, using default false
+2017-08-20 20:57:19 INFO: egl.maxNumberOfForgers = "100"
+2017-08-20 20:57:19 INFO: egl.enableFakeForging not defined, using default false
+2017-08-20 20:57:19 INFO: egl.disableGenerateBlocksThread not defined, using default false
+2017-08-20 20:57:19 INFO: egl.addOns not defined
+2017-08-20 20:57:19 INFO: egl.allowedUserHosts = "127.0.0.1; localhost; [0:0:0:0:0:0:0:1];"
+2017-08-20 20:57:19 INFO: egl.enableUIServer = "false"
+2017-08-20 20:57:19 INFO: User interface server not enabled
+2017-08-20 20:57:19 INFO: egl.debugTraceQuote = """
+2017-08-20 20:57:19 INFO: egl.debugTraceSeparator = "	"
+2017-08-20 20:57:19 INFO: egl.debugLogUnconfirmed = "false"
+2017-08-20 20:57:19 INFO: egl.debugTraceAccounts not defined
+2017-08-20 20:57:19 INFO: egl.debugTraceLog = "egl-trace.csv"
+2017-08-20 20:57:19 FINE: Running 2 tasks...
+2017-08-20 20:57:19 INFO: Genesis block not in database, starting from scratch
+2017-08-20 20:57:19 FINE: Loading known peers from the database...
+2017-08-20 20:57:20 FINE: Scheduled scan starting from height 0
+2017-08-20 20:57:20 INFO: Scanning blockchain starting from height 0...
+2017-08-20 20:57:20 FINE: Dropping all full text search indexes
+2017-08-20 20:57:20 INFO: Lucene search index deleted
+2017-08-20 20:57:20 FINE: Rolled back derived tables
+2017-08-20 20:57:20 INFO: processed block 0
+2017-08-20 20:57:20 FINE: Creating search index on account_info (name,description)
+2017-08-20 20:57:20 INFO: Lucene search index created for table PUBLIC.ACCOUNT_INFO
+2017-08-20 20:57:20 FINE: Creating search index on asset (name,description)
+2017-08-20 20:57:20 INFO: Lucene search index created for table PUBLIC.ASSET
+2017-08-20 20:57:20 FINE: Creating search index on goods (name,description,tags)
+2017-08-20 20:57:20 INFO: Lucene search index created for table PUBLIC.GOODS
+2017-08-20 20:57:20 FINE: Creating search index on poll (name,description)
+2017-08-20 20:57:20 INFO: Lucene search index created for table PUBLIC.POLL
+2017-08-20 20:57:20 FINE: Creating search index on currency (code,name,description)
+2017-08-20 20:57:20 INFO: Lucene search index created for table PUBLIC.CURRENCY
+2017-08-20 20:57:20 FINE: Creating search index on tagged_data (name,description,tags)
+2017-08-20 20:57:20 INFO: Lucene search index created for table PUBLIC.TAGGED_DATA
+2017-08-20 20:57:20 INFO: ...done at height 0
+2017-08-20 20:57:20 FINE: Running 2 final tasks...
+2017-08-20 20:57:20 INFO: Looking for UPnP gateway device...
+2017-08-20 20:57:20 INFO: egl.apiServerEnforcePOST = "true"
+2017-08-20 20:57:20 INFO: egl.upnpGatewayTimeout not defined or not numeric, using default value 7000
+2017-08-20 20:57:20 INFO: egl.upnpDiscoverTimeout not defined or not numeric, using default value 3000
+2017-08-20 20:57:20 INFO: Started API server at 127.0.0.1:7876
+2017-08-20 20:57:29 FINE: There are no UPnP gateway devices
+2017-08-20 20:57:29 INFO: Started peer networking server at 0.0.0.0:7874
+2017-08-20 20:57:29 FINE: Starting 10 background jobs
+2017-08-20 20:57:29 FINE: Starting 2 delayed tasks
+2017-08-20 20:57:29 FINE: Known peers: 1
+2017-08-20 20:57:29 INFO: Initialization took 12 seconds
+2017-08-20 20:57:29 INFO: Eagle server 1.11.7 started successfully.
+2017-08-20 20:57:29 INFO: Copyright © 2013-2016 The Eagle Core Developers.
+2017-08-20 20:57:29 INFO: Copyright © 2016-2017 Jelurida IP B.V.
+2017-08-20 20:57:29 INFO: Distributed under the Jelurida Public License version 1.0 for the Eagle Public Blockchain Platform, with ABSOLUTELY NO WARRANTY.
+2017-08-20 20:57:29 INFO: Client UI is at http://localhost:7876/index.html
+2017-08-20 20:57:29 INFO: egl.launchDesktopApplication = "true"
+2017-08-20 20:57:29 INFO: Launching desktop wallet
+2017-08-20 20:57:30 INFO: egl.defaultDesktopAccount not defined
+2017-08-20 20:57:30 INFO: webview address changed to http://localhost:7876/index.html
+2017-08-20 20:57:30 FINE: loadWorker old state READY new state SCHEDULED
+2017-08-20 20:57:30 FINE: loadWorker state change ignored
+2017-08-20 20:57:30 FINE: loadWorker old state SCHEDULED new state RUNNING
+2017-08-20 20:57:30 FINE: loadWorker state change ignored
+2017-08-20 20:57:34 FINE: loadWorker old state RUNNING new state SUCCEEDED
+2017-08-20 20:57:34 INFO: done loading server constants
+2017-08-20 20:57:34 INFO: calling getState
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.675Z Send request getState to url /egl?requestType=getState
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.678Z getState event Desktop Wallet started
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.679Z Send request getBlockchainStatus to url /egl?requestType=getBlockchainStatus
+2017-08-20 20:57:34 INFO: getState response received
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.692Z Send request getPlugins to url /egl?requestType=getPlugins
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.694Z navigator.userAgent = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/602.1 (KHTML, like Gecko) JavaFX/8.0 Safari/602.1
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.695Z navigator.platform = Win32
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.696Z navigator.appVersion = 5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/602.1 (KHTML, like Gecko) JavaFX/8.0 Safari/602.1
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.697Z navigator.appName = Netscape
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.698Z navigator.appCodeName = Mozilla
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.699Z navigator.hardwareConcurrency = 4
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.700Z navigator.maxTouchPoints = undefined
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.701Z navigator.languages = undefined
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.702Z navigator.language = en
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.703Z navigator.userLanguage = undefined
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.703Z navigator.cookieEnabled = true
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.704Z navigator.onLine = true
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.705Z NRS.isTestNet = false
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.706Z NRS.needsAdminPassword = false
+2017-08-20 20:57:34 INFO: getState response processed
+2017-08-20 20:57:34 INFO: continue initialization
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.747Z Send request getBlockchainStatus to url /egl?requestType=getBlockchainStatus
+2017-08-20 20:57:34 INFO: done initialization
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.876Z Send request getBlock to url /egl?requestType=getBlock
+2017-08-20 20:57:34 INFO: 2017-08-20T13:57:34.883Z Send request getPeers to url /egl?requestType=getPeers
+2017-08-20 20:57:35 INFO: 2017-08-20T13:57:35.004Z Send request getPeers to url /egl?requestType=getPeers
+2017-08-20 20:57:35 INFO: 2017-08-20T13:57:35.038Z Locale language: 'en-US' date format: 'M/d/yyyy' decimal separator: '.' section separator: ',' display name: 'English (United States)'
+2017-08-20 20:59:02 INFO: login isPassphraseLogin = 0, isAccountSwitch = undefined, isSavedPassphrase = undefined
+2017-08-20 20:59:02 INFO: login calling getBlockchainStatus
+2017-08-20 20:59:02 INFO: 2017-08-20T13:59:02.619Z Send request getBlockchainStatus to url /egl?requestType=getBlockchainStatus
+2017-08-20 20:59:02 INFO: getBlockchainStatus response received
+2017-08-20 20:59:02 INFO: calling getAccount
+2017-08-20 20:59:02 INFO: 2017-08-20T13:59:02.683Z Send request getAccount to url /egl?requestType=getAccount
+2017-08-20 20:59:02 INFO: getAccount response received
+2017-08-20 20:59:02 INFO: login isPassphraseLogin = 0, isAccountSwitch = undefined, isSavedPassphrase = undefined
+2017-08-20 20:59:02 INFO: login calling getBlockchainStatus
+2017-08-20 20:59:02 INFO: 2017-08-20T13:59:02.821Z Send request getBlockchainStatus to url /egl?requestType=getBlockchainStatus
+2017-08-20 20:59:02 INFO: getBlockchainStatus response received
+2017-08-20 20:59:02 INFO: calling getAccount
+2017-08-20 20:59:02 INFO: 2017-08-20T13:59:02.874Z Send request getAccount to url /egl?requestType=getAccount
+2017-08-20 20:59:02 INFO: getAccount response received
+2017-08-20 20:59:06 INFO: login isPassphraseLogin = 0, isAccountSwitch = undefined, isSavedPassphrase = undefined
+2017-08-20 20:59:06 INFO: login calling getBlockchainStatus
+2017-08-20 20:59:06 INFO: 2017-08-20T13:59:06.571Z Send request getBlockchainStatus to url /egl?requestType=getBlockchainStatus
+2017-08-20 20:59:06 INFO: getBlockchainStatus response received
+2017-08-20 20:59:06 INFO: calling getAccount
+2017-08-20 20:59:06 INFO: 2017-08-20T13:59:06.621Z Send request getAccount to url /egl?requestType=getAccount
+2017-08-20 20:59:06 INFO: getAccount response received
